@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-[#c4c3c0] text-[#353239] tracking-wide
+    @apply bg-[#e0e0dd] text-[#353239] tracking-wide
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold
@@ -19,7 +19,16 @@
     @apply cursor-pointer
   }
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[blue] to-[red] text-white
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[blue] to-[red] text-[#353239]
   }
+  
  
+}
+@layer utilities {
+  ._link {
+    @apply hover:scale-110 ease-in duration-100 cursor-pointer
+  }
+  ._round-icon {
+    @apply rounded-full shadow-lg shadow-gray-400
+  }
 }

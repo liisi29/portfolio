@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import NavBar from "../components/Navbar";
+import NavBar from "../components/NavBar/Navbar";
 
 export default function Home() {
   return (
