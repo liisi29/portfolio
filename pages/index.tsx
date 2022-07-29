@@ -1,6 +1,6 @@
 import Head from "next/head";
-import SkillCloud from "../components/skills/SkillCloud";
-import Skills from "../components/skills/Skills";
+import SkillCloud from "../components/elements/SkillCloud";
+import Work from "../components/work/Work";
 import About from "../components/about/About";
 import Main from "../components/main/Main";
 import NavBar from "../components/navbar/Navbar";
@@ -21,7 +21,7 @@ export default function Home() {
         <SkillCloud />
       </div>
       <About />
-      <Skills />
+      <Work />
       <Contact />
       <Footer />
     </div>

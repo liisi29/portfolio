@@ -1,10 +1,10 @@
 import { Http2ServerRequest } from "http2";
 import IconList from "../elements/IconList";
-import SkillCloud from "../skills/SkillCloud";
+import SkillCloud from "../elements/SkillCloud";
 
 const Main = () => {
   return (
-    <section className="_bg-cream w-full h-screen text-center">
+    <section className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="py-4 m-auto">Hi, my name is</p>

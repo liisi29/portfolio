@@ -6,7 +6,7 @@ function About() {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
 
   return (
-    <section id="about" className="_bg-white">
+    <section id="about" className="_bg-skew">
       <article>
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-wider text-[red]">

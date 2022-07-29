@@ -15,18 +15,17 @@ const NavBar = () => {
   };
   // prettier-ignore
   const pages = [
-    { link: "/", text: "Home", delay: "_animation-delay-1" },
-    { link: "/#about", text: "About", delay: "_animation-delay-2" },
-    { link: "/#skills", text: "Skills", delay: "_animation-delay-3" },
-    { link: "work", text: "Work", delay: "_animation-delay-4" },
-    { link: "contact", text: "Contact", delay: "_animation-delay-5" },
+    { link: "/", text: "Home", delay: "_animation-delay-2" },
+    { link: "/#about", text: "About", delay: "_animation-delay-3" },
+    { link: "/#work", text: "Work", delay: "_animation-delay-4" },
+    { link: "/#contact", text: "Contact", delay: "_animation-delay-5" },
   ];
   const linkedIn = <FaLinkedinIn />;
   const email = <AiOutlineMail />;
   const twitter = <FaTwitter />;
   const github = <FaGithub />;
   return (
-    <header className="_bg-cream absolute md:relative w-full h-20 z-[100]">
+    <header className="absolute md:relative w-full h-20 z-[100]">
       <div className="flex justify-end items-center w-full h-full px-2 2xl:px-16">
         <div>
           <ul className="hidden md:flex text-sm font-mono">

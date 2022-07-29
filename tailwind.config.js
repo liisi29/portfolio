@@ -24,7 +24,7 @@ module.exports = {
           '100%': { opacity: 1,  transform: "translateX(0)" },
         },
         slideFromLeft: {
-          '0%': { opacity: 0, transform: "translateX(-500px)" },
+          '0%': { opacity: 0, transform: "translateX(-50px)" },
           '100%': { opacity: 1,  transform: "translateX(0)" },
         },
       }

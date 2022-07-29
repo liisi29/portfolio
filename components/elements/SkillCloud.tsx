@@ -23,12 +23,12 @@ function SkillCloud() {
     <div className="h-[30rem] md:h-full w-2/5 w-max-[30%] relative md:absolute top-[-6rem] md:top-24 left-0">
       {skills.map((el, i) => (
         <div
-          style={{ animationDelay: `${i}s` }}
+          style={{ animationDelay: `${i / 2}s` }}
           key={el.text}
           className={`${el.size} ${el.top} ${el.left} 
           transition-all 
           _animation-fill-backwards 
-          animate-[slideFromLeft_3s_ease-in-out] 
+          animate-[slideFromLeft_2s_ease-in-out] 
           text-xl 
           text-gray-300 
           uppercase 
