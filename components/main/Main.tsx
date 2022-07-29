@@ -1,20 +1,16 @@
 import { Http2ServerRequest } from "http2";
-import IconList from "../iconList/IconList";
+import IconList from "../elements/IconList";
 import SkillCloud from "../skills/SkillCloud";
 
 const Main = () => {
   return (
-    <div className="w-full h-screen text-center">
+    <section className="_bg-cream w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
-          <h1>
-            Hi, I'm <span className="text-[red]">Liisi</span>
-          </h1>
+          <p className="py-4 m-auto">Hi, my name is</p>
+          <h1>Liisi Raidaru</h1>
           <h3 className="uppercase mt-6">I like to build things</h3>
-          <h3 className="uppercase mt-6">i am a front end developer</h3>
-          <p className="py-4 text-gray-600 mx-w-[70%] m-auto">
-            I am a front end dafdfdsf fdfds lorem ipsum
-          </p>
+          <p className="py-4 mx-w-[70%] m-auto">I am a front end developer</p>
           <div className="flex items-center justify-center max-w-[330px] m-auto py-4">
             <IconList />
           </div>
@@ -23,7 +19,7 @@ const Main = () => {
       <div className="hidden md:block">
         <SkillCloud />
       </div>
-    </div>
+    </section>
   );
 };
 export default Main;

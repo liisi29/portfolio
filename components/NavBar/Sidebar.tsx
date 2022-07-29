@@ -3,7 +3,7 @@ import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
 import { useState } from "react";
-import IconList from "../iconList/IconList";
+import IconList from "../elements/IconList";
 
 export interface IProps {
   showSidebar: boolean;
@@ -25,7 +25,7 @@ const Sidebar = ({ showSidebar, handleCloseClick, pages }: IProps) => {
         ${showSidebar ? "w-full" : "w-0"}`}
       ></div>
       <div
-        className={`h-screen bg-white p-10 sm:w-[60%] md:w-[45%] ${animation} ${position} ${
+        className={`h-screen _bg-white p-10 sm:w-[60%] md:w-[45%] ${animation} ${position} ${
           showSidebar ? "right-0 w-[75%]" : "right-[-100%]"
         }`}
       >

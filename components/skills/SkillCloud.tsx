@@ -20,12 +20,19 @@ function SkillCloud() {
   ];
 
   return (
-    <div className=" h-[30rem] md:h-full w-2/5 w-max-[30%] relative md:absolute top-[-6rem] md:top-24 left-0">
+    <div className="h-[30rem] md:h-full w-2/5 w-max-[30%] relative md:absolute top-[-6rem] md:top-24 left-0">
       {skills.map((el, i) => (
         <div
           style={{ animationDelay: `${i}s` }}
           key={el.text}
-          className={`${el.size} ${el.top} ${el.left} transition-all _animation-fill-backwards animate-[slideFromLeft_3s_ease-in-out] text-xl text-gray-500 uppercase absolute left-0 top-0`}
+          className={`${el.size} ${el.top} ${el.left} 
+          transition-all 
+          _animation-fill-backwards 
+          animate-[slideFromLeft_3s_ease-in-out] 
+          text-xl 
+          text-gray-300 
+          uppercase 
+          absolute left-0 top-0`}
         >
           #{el.text}
         </div>

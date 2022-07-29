@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
@@ -27,19 +26,10 @@ const NavBar = () => {
   const twitter = <FaTwitter />;
   const github = <FaGithub />;
   return (
-    <div className="absolute md:relative w-full h-20 z-[100]">
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <div className="hidden md:block">
-          <Image
-            src="/../public/assets/logo.png"
-            alt="/"
-            width="254"
-            height="20"
-          ></Image>
-        </div>
-
+    <header className="_bg-cream absolute md:relative w-full h-20 z-[100]">
+      <div className="flex justify-end items-center w-full h-full px-2 2xl:px-16">
         <div>
-          <ul className="hidden md:flex uppercase text-sm">
+          <ul className="hidden md:flex text-sm font-mono">
             {pages.map((p, i) => {
               return (
                 <Link href={p.link} key={p.link}>
@@ -65,7 +55,7 @@ const NavBar = () => {
         showSidebar={showSidebar}
         handleCloseClick={handleCloseClick}
       ></Sidebar>
-    </div>
+    </header>
   );
 };
 export default NavBar;

@@ -1,10 +1,11 @@
 import Head from "next/head";
-import Image from "next/image";
 import SkillCloud from "../components/skills/SkillCloud";
 import Skills from "../components/skills/Skills";
 import About from "../components/about/About";
 import Main from "../components/main/Main";
 import NavBar from "../components/navbar/Navbar";
+import Contact from "../components/contact/Contact";
+import Footer from "../components/footer/Footer";
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
       </div>
       <About />
       <Skills />
+      <Contact />
+      <Footer />
     </div>
   );
 }

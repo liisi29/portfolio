@@ -8,9 +8,8 @@ html {
 
 @layer base {
   body {
-    @apply bg-[#e0e0dd] text-[#353239] tracking-wide
+    @apply  tracking-wide font-mono
   }
-
   h1 {
     @apply font-bold text-6xl
   }
@@ -23,10 +22,27 @@ html {
   li {
     @apply cursor-pointer
   }
+  section {
+    @apply w-full md:h-screen p-2 flex items-center py-16 relative
+  }
+  article {
+    @apply max-w-[1240px] m-auto md:grid grid-cols-3 gap-8
+  }
   button {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[blue] to-[red] text-[#353239]
   }
-  
+  ._bg-white {
+    @apply bg-[#fff] text-gray-400
+  }
+  ._bg-cream {
+    @apply bg-[#f9f9f9] text-gray-600
+  }
+  ._bg-dark {
+    @apply bg-slate-700 text-[#fff] 
+  }
+  ._bg-black {
+    @apply bg-slate-800 text-[#fff] 
+  }
  
 }
 @layer utilities {
