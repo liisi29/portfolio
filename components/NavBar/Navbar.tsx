@@ -18,22 +18,27 @@ const NavBar = () => {
     {
       link: "/",
       text: "Home",
+      delay: "_animation-delay-1",
     },
     {
-      link: "about",
+      link: "/#about",
       text: "About",
+      delay: "_animation-delay-2",
     },
     {
       link: "skills",
       text: "Skills",
+      delay: "_animation-delay-3",
     },
     {
       link: "work",
       text: "Work",
+      delay: "_animation-delay-4",
     },
     {
       link: "contact",
       text: "Contact",
+      delay: "_animation-delay-5",
     },
   ];
   const linkedIn = <FaLinkedinIn />;
@@ -50,11 +55,15 @@ const NavBar = () => {
           height="20"
         ></Image>
         <div>
-          <ul className="hidden md:flex uppercase text-sm ">
+          <ul className="hidden md:flex uppercase text-sm">
             {pages.map((p, i) => {
               return (
                 <Link href={p.link} key={p.link}>
-                  <li className="ml-10 hover:border-b _link">{p.text}</li>
+                  <li
+                    className={`animate-pop _animation-fill-backwards ${p.delay} ml-10 hover:border-b`}
+                  >
+                    {p.text}
+                  </li>
                 </Link>
               );
             })}

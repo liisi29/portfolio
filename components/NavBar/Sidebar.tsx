@@ -3,6 +3,7 @@ import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
 import { useState } from "react";
+import IconList from "../iconList/IconList";
 
 export interface IProps {
   showSidebar: boolean;
@@ -54,13 +55,7 @@ const Sidebar = ({ showSidebar, handleCloseClick, pages }: IProps) => {
           </ul>
           <div className="pt-40">
             <p className="uppercase tracking-widget">Let's connect</p>
-            <div className="flex items-center justify-between my-4 w-full lg:w-[80%]">
-              {[linkedIn, email, twitter, github].map((el, i) => (
-                <div key={i} className="_round-icon _link tracking-widest p-4 ">
-                  {el}
-                </div>
-              ))}
-            </div>
+            <IconList />
           </div>
         </div>
       </div>

@@ -2,18 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   body {
     @apply bg-[#e0e0dd] text-[#353239] tracking-wide
   }
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-bold
-  }
+
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl
+    @apply font-bold text-6xl
   }
   h2 {
     @apply text-3xl sm:text-4xl
+  }
+  h3 {
+    @apply text-2xl md:text-xl
   }
   li {
     @apply cursor-pointer
@@ -31,4 +36,28 @@
   ._round-icon {
     @apply rounded-full shadow-lg shadow-gray-400
   }
+  ._image {
+    @apply rounded-xl shadow-lg shadow-gray-400 
+  }  
+  ._animation-fill-backwards {
+    animation-fill-mode: backwards;
+  }
+  ._animation-delay-0 {
+    animation-delay: 0s;
+  }
+  ._animation-delay-1 {
+    animation-delay: 0.1s;
+  }
+  ._animation-delay-2 {
+    animation-delay: 0.2s;
+  }
+  ._animation-delay-3 {
+    animation-delay: 0.3s;
+  }
+  ._animation-delay-4 {
+    animation-delay: 0.4s;
+  }
+  ._animation-delay-5 {
+    animation-delay: 0.5s;
+  }  
 }
