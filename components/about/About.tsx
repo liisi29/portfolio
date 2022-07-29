@@ -6,7 +6,10 @@ function About() {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
 
   return (
-    <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
+    <div
+      id="about"
+      className="w-full md:h-screen p-2 flex items-center py-16 relative"
+    >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-wider text-[red]">About</p>
@@ -27,7 +30,7 @@ function About() {
         </div>
         <div
           className={`${
-            imageIsLoaded ? "animate-[slide_2s_ease-in-out]" : ""
+            imageIsLoaded ? "animate-[slideFromRight_2s_ease-in-out]" : ""
           } w-full h-auto m-auto _image justify-center p-4`}
         >
           <Image

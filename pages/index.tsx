@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+import SkillCloud from "../components/skills/SkillCloud";
+import Skills from "../components/skills/Skills";
 import About from "../components/about/About";
 import Main from "../components/main/Main";
 import NavBar from "../components/navbar/Navbar";
@@ -14,7 +16,11 @@ export default function Home() {
       </Head>
       <NavBar />
       <Main />
+      <div className="md:hidden">
+        <SkillCloud />
+      </div>
       <About />
+      <Skills />
     </div>
   );
 }

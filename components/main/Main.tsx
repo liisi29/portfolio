@@ -1,5 +1,6 @@
 import { Http2ServerRequest } from "http2";
 import IconList from "../iconList/IconList";
+import SkillCloud from "../skills/SkillCloud";
 
 const Main = () => {
   return (
@@ -14,10 +15,13 @@ const Main = () => {
           <p className="py-4 text-gray-600 mx-w-[70%] m-auto">
             I am a front end dafdfdsf fdfds lorem ipsum
           </p>
-          <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
+          <div className="flex items-center justify-center max-w-[330px] m-auto py-4">
             <IconList />
           </div>
         </div>
+      </div>
+      <div className="hidden md:block">
+        <SkillCloud />
       </div>
     </div>
   );

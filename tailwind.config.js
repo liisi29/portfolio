@@ -19,8 +19,12 @@ module.exports = {
           '0%': { opacity: 0, transform: "scale(0.5, 0.5)" },
           '100%': { opacity: 1,  transform: "scale(1, 1)" },
         },
-        slide: {
+        slideFromRight: {
           '0%': { opacity: 0, transform: "translateX(3000px)" },
+          '100%': { opacity: 1,  transform: "translateX(0)" },
+        },
+        slideFromLeft: {
+          '0%': { opacity: 0, transform: "translateX(-500px)" },
           '100%': { opacity: 1,  transform: "translateX(0)" },
         },
       }

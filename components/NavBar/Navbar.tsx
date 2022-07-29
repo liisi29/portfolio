@@ -14,46 +14,30 @@ const NavBar = () => {
   const handleOpenClick = () => {
     setShowSidebar(true);
   };
+  // prettier-ignore
   const pages = [
-    {
-      link: "/",
-      text: "Home",
-      delay: "_animation-delay-1",
-    },
-    {
-      link: "/#about",
-      text: "About",
-      delay: "_animation-delay-2",
-    },
-    {
-      link: "skills",
-      text: "Skills",
-      delay: "_animation-delay-3",
-    },
-    {
-      link: "work",
-      text: "Work",
-      delay: "_animation-delay-4",
-    },
-    {
-      link: "contact",
-      text: "Contact",
-      delay: "_animation-delay-5",
-    },
+    { link: "/", text: "Home", delay: "_animation-delay-1" },
+    { link: "/#about", text: "About", delay: "_animation-delay-2" },
+    { link: "/#skills", text: "Skills", delay: "_animation-delay-3" },
+    { link: "work", text: "Work", delay: "_animation-delay-4" },
+    { link: "contact", text: "Contact", delay: "_animation-delay-5" },
   ];
   const linkedIn = <FaLinkedinIn />;
   const email = <AiOutlineMail />;
   const twitter = <FaTwitter />;
   const github = <FaGithub />;
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
+    <div className="absolute md:relative w-full h-20 z-[100]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image
-          src="/../public/assets/logo.png"
-          alt="/"
-          width="254"
-          height="20"
-        ></Image>
+        <div className="hidden md:block">
+          <Image
+            src="/../public/assets/logo.png"
+            alt="/"
+            width="254"
+            height="20"
+          ></Image>
+        </div>
+
         <div>
           <ul className="hidden md:flex uppercase text-sm">
             {pages.map((p, i) => {
@@ -68,7 +52,10 @@ const NavBar = () => {
               );
             })}
           </ul>
-          <div className="md:hidden" onClick={handleOpenClick}>
+          <div
+            className="md:hidden absolute right-4 top-4"
+            onClick={handleOpenClick}
+          >
             <AiOutlineMenu size={25} />
           </div>
         </div>
