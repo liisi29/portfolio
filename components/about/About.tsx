@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import pic from "public/assets/face.jpg";
 import { useRouter } from "next/router";
 
 function About() {
@@ -40,7 +41,7 @@ function About() {
         >
           <Image
             className="rounded-xl"
-            src="/../public/assets/face.jpg"
+            src={pic}
             alt="/"
             width="960"
             height="1280"
