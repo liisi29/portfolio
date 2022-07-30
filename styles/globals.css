@@ -23,7 +23,7 @@ html {
     @apply cursor-pointer
   }
   section {
-    @apply w-full md:h-screen p-2 flex items-center relative py-[2rem] px-[20%] 
+    @apply w-full p-2 flex items-center relative py-[2rem] px-[20%] 
   }
   article {
     @apply max-w-[1240px] m-auto md:grid grid-cols-3 gap-8

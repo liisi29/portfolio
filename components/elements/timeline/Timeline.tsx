@@ -84,8 +84,15 @@ function Element({ props }: { props: Partial<IBlock> }) {
             </li>
           ))}
         </ul>
+        <div className="px-8 py-4 flex flex-wrap">
+          {props.tech?.map((t, i) => (
+            <div className="_text-contrast whitespace-nowrap" key={t}>
+              <span className="px-1">{t}</span>
+              <span className="px-1">•</span>
+            </div>
+          ))}
+        </div>
       </div>
-      <div></div>
     </div>
   );
 }
