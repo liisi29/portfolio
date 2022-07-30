@@ -35,11 +35,11 @@ function About() {
         </div>
         <div
           className={`${
-            imageIsLoaded ? "animate-[slideFromRight_1s_ease-in-out]" : ""
+            imageIsLoaded ? "animate-[fade_1s_ease-in-out] rounded-xl" : ""
           } w-full h-auto m-auto _image justify-center p-4`}
         >
           <Image
-            className="rounded-xl"
+            className=""
             src="assets/face.jpg"
             alt="/"
             width="960"
