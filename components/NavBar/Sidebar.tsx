@@ -35,7 +35,9 @@ const Sidebar = ({ showSidebar, handleCloseClick, pages }: IProps) => {
           </div>
         </div>
         <div className="border-b border-gray-300 my-4">
-          <p className="w-[85%] md:w-[90%] py-4">Let's build stuff</p>
+          <p className="w-[85%] md:w-[90%] py-4">
+            Let{encodeURI("'")}s build stuff
+          </p>
         </div>
         <div className="py-4 flex flex-col">
           <ul className="uppercase text-center">
@@ -48,7 +50,9 @@ const Sidebar = ({ showSidebar, handleCloseClick, pages }: IProps) => {
             })}
           </ul>
           <div className="pt-40">
-            <p className="uppercase tracking-widget">Let's connect</p>
+            <p className="uppercase tracking-widget">
+              Let{encodeURI("'")}s connect
+            </p>
             <IconList />
           </div>
         </div>
