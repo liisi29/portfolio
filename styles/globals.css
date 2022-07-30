@@ -8,7 +8,7 @@ html {
 
 @layer base {
   body {
-    @apply bg-[#f9f9f9] text-gray-600 tracking-wide font-mono
+    @apply bg-[#f9f9f9] text-gray-600 tracking-wide font-mono text-lg
   }
   h1 {
     @apply font-bold text-6xl

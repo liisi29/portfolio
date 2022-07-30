@@ -28,12 +28,12 @@ const NavBar = () => {
     <header className="absolute md:relative w-full h-20 z-[100]">
       <div className="flex justify-end items-center w-full h-full px-2 2xl:px-16">
         <div>
-          <ul className="hidden md:flex text-sm font-mono">
+          <ul className="hidden md:flex font-mono">
             {pages.map((p, i) => {
               return (
                 <Link href={p.link} key={p.link}>
                   <li
-                    className={`animate-pop _animation-fill-backwards ${p.delay} ml-10 hover:border-b`}
+                    className={`animate-pop _animation-fill-backwards ${p.delay} ml-10 hover:border-b _link`}
                   >
                     {p.text}
                   </li>

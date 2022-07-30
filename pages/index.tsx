@@ -1,5 +1,6 @@
 import Head from "next/head";
-import SkillCloud from "../components/elements/SkillCloud";
+import SkillCloud from "../components/elements/cloud/SkillCloud";
+import EduCloud from "../components/elements/cloud/EduCloud";
 import Work from "../components/work/Work";
 import About from "../components/about/About";
 import Main from "../components/main/Main";
@@ -19,6 +20,7 @@ export default function Home() {
       <Main />
       <div className="block lg:hidden">
         <SkillCloud />
+        <EduCloud />
       </div>
       <About />
       <Work />

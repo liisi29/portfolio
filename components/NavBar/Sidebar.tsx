@@ -29,13 +29,7 @@ const Sidebar = ({ showSidebar, handleCloseClick, pages }: IProps) => {
           showSidebar ? "right-0 w-[75%]" : "right-[-100%]"
         }`}
       >
-        <div className="flex w-full items-center justify-between">
-          <Image
-            src="/../public/assets/logo.png"
-            alt="/"
-            width="254"
-            height="20"
-          ></Image>
+        <div className="flex w-full justify-end">
           <div className="_round-icon p-3 _link" onClick={handleCloseClick}>
             <AiOutlineClose size={25} />
           </div>
@@ -44,7 +38,7 @@ const Sidebar = ({ showSidebar, handleCloseClick, pages }: IProps) => {
           <p className="w-[85%] md:w-[90%] py-4">Let's build stuff</p>
         </div>
         <div className="py-4 flex flex-col">
-          <ul className="uppercase text-sm text-center">
+          <ul className="uppercase text-center">
             {pages.map((p, i) => {
               return (
                 <Link href={p.link} key={p.link}>

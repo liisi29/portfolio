@@ -1,6 +1,7 @@
 import { Http2ServerRequest } from "http2";
 import IconList from "../elements/IconList";
-import SkillCloud from "../elements/SkillCloud";
+import SkillCloud from "../elements/cloud/SkillCloud";
+import EduCloud from "../elements/cloud/EduCloud";
 
 const Main = () => {
   return (
@@ -20,6 +21,9 @@ const Main = () => {
       </div>
       <div className="hidden lg:block">
         <SkillCloud />
+      </div>
+      <div className="hidden lg:block">
+        <EduCloud />
       </div>
     </section>
   );

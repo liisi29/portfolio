@@ -68,9 +68,9 @@ function Element({ props }: { props: Partial<IBlock> }) {
       className={`${col} ${contentBg} ${contentShadow} p-4 rounded-xl my-4 mr-auto relative`}
     >
       <h3 className="font-semibold text-lg mb-1">{title}</h3>
-      <div className="absolute top-[-1rem] right-0 text-right text-gray-500">
-        <h4 className="text-sm">{company}</h4>
-        <h4 className="text-sm">{date}</h4>
+      <div className="absolute top-[-1rem] right-0 text-right text-sm text-gray-500">
+        <h4>{company}</h4>
+        <h4>{date}</h4>
       </div>
 
       <div className="leading-tight text-justify">
@@ -88,7 +88,12 @@ function Element({ props }: { props: Partial<IBlock> }) {
           {props.tech?.map((t, i) => (
             <div className="_text-contrast whitespace-nowrap" key={t}>
               <span className="px-1">{t}</span>
-              <span className="px-1">•</span>
+              <span
+                // prettier-ignore
+                className={`px-1 ${ i === (props.tech || []).length - 1 ? "hidden" : ""} `}
+              >
+                •
+              </span>
             </div>
           ))}
         </div>
