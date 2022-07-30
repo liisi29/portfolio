@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
       <NavBar />
       <Main />
-      <div className="md:hidden">
+      <div className="block lg:hidden">
         <SkillCloud />
       </div>
       <About />

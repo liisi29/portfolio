@@ -9,7 +9,7 @@ function About() {
     <section id="about" className="_bg-skew">
       <article>
         <div className="col-span-2">
-          <p className="uppercase text-xl tracking-wider text-[red]">
+          <p className="uppercase text-xl tracking-wider text-white">
             About me
           </p>
           <p className="py-2">My name is Liisi.</p>
@@ -24,17 +24,18 @@ function About() {
             to front end and have been enjoying it ever since.
           </p>
           <p className="py-2">
-            Today I am a senior front end developer in Estonian company OÜ
-            Turnit. I also study a lot and try to analyze my experiences,
-            successes and mistakes I have made. My main focus these days is
-            clean code and building maintainable and scalable systems.
+            Today I am a senior front end developer in Estonian company Turnit.
+            <br />I also study a lot and try to analyze my experiences,
+            successes and mistakes.
+            <br /> My main focus these days is clean code and building
+            maintainable and scalable systems.
           </p>
 
           <p className="py-2 cursor-pointer">Check it out</p>
         </div>
         <div
           className={`${
-            imageIsLoaded ? "animate-[slideFromRight_2s_ease-in-out]" : ""
+            imageIsLoaded ? "animate-[slideFromRight_1s_ease-in-out]" : ""
           } w-full h-auto m-auto _image justify-center p-4`}
         >
           <Image

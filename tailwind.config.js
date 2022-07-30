@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -20,7 +21,7 @@ module.exports = {
           '100%': { opacity: 1,  transform: "scale(1, 1)" },
         },
         slideFromRight: {
-          '0%': { opacity: 0, transform: "translateX(3000px)" },
+          '0%': { opacity: 0, transform: "translateX(150px)" },
           '100%': { opacity: 1,  transform: "translateX(0)" },
         },
         slideFromLeft: {

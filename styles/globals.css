@@ -31,11 +31,17 @@ html {
   button {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[blue] to-[red] text-[#353239]
   }
+  ._text-contrast {
+    @apply text-red-600;
+  }
+  ._bg-contrast {
+    @apply bg-red-600;
+  }
   ._bg-skew {
     @apply bg-slate-700 text-[#fff] py-[10rem] px-[20%] 
   }
   ._bg-white {
-    @apply bg-[white] text-gray-600 
+    @apply bg-[white] 
   }
   ._bg-dark {
     @apply bg-slate-700 text-[#fff] 
