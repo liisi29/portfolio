@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import pic from "public/assets/face.jpg";
+import pic from "../../public/assets/face.jpg";
 import { useRouter } from "next/router";
 
 function About() {
