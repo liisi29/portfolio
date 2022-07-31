@@ -1,37 +1,36 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import SectionHeader from "@components/elements/SectionHeader";
+import Trans from "translations/Trans";
 
 function About() {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
 
   return (
     <section id="about" className="_bg-skew">
+      <SectionHeader section="about" sectionColor="dark" />
       <article className="flex flex-col xl:flex-row text-justify">
-        <div className="py-40">
-          <p className="uppercase text-xl tracking-wider text-white">
-            About me
-          </p>
-          <p className="py-2">My name is Liisi.</p>
-          <p className="py-2">I like to build things for internet.</p>
+        <div className="lg:pr-4">
           <p className="py-2">
-            I started out by customizing Wordpress themes around 2012, but
-            shortly after that I discovered Javascript. Fell in love from the
-            first sight.
+            <Trans page="about" k="name" />
           </p>
           <p className="py-2">
-            Although my first actual job was C#, in 2013, I quickly drifted back
-            to front end and have been enjoying it ever since.
+            <Trans page="about" k="iLike" />
           </p>
           <p className="py-2">
-            Today I am a senior front end developer in Estonian company Turnit.
-            <br />I also study a lot and try to analyze my experiences,
-            successes and mistakes.
-            <br /> My main focus these days is clean code and building
-            maintainable and scalable systems.
+            <Trans page="about" k="iStarted" />
           </p>
-
-          <p className="py-2 cursor-pointer">Check it out</p>
+          <p className="py-2">
+            <Trans page="about" k="firstJob" />
+          </p>
+          <p className="py-2">
+            <Trans page="about" k="today1" />
+            <br />
+            <Trans page="about" k="today2" />
+            <br />
+            <Trans page="about" k="today3" />
+          </p>
         </div>
         <div
           className={`${
@@ -40,7 +39,7 @@ function About() {
         >
           <Image
             className="rounded-xl"
-            src="/assets/face.jpg"
+            src="/assets/face_gray-shirt.jpg"
             alt="/"
             width="960"
             height="1280"
