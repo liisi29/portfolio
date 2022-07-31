@@ -26,7 +26,7 @@ html {
     @apply w-full flex items-center relative py-[2rem] px-4 lg:px-[20%] 
   }
   article {
-    @apply max-w-[1240px] m-auto 
+    @apply max-w-[1240px] m-auto py-40 
   }
   button {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[blue] to-[red] text-[#353239]

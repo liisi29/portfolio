@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
-import { useState } from "react";
+import Trans from "translations/Trans";
 import IconList from "../elements/IconList";
 
 export interface IProps {
@@ -34,24 +34,21 @@ function Sidebar({ showSidebar, handleCloseClick, pages }: IProps) {
             <AiOutlineClose size={25} />
           </div>
         </div>
-        <div className="border-b border-gray-300 my-4">
-          <p className="w-[85%] md:w-[90%] py-4">
-            Let{encodeURI("'")}s build stuff
-          </p>
-        </div>
         <div className="py-4 flex flex-col">
           <ul className="uppercase text-center">
             {pages.map((p, i) => {
               return (
                 <Link href={p.link} key={p.link}>
-                  <li className="py-4 _link">{p.text}</li>
+                  <li className="py-4 _link">
+                    <Trans page="nav" k={p.text} />
+                  </li>
                 </Link>
               );
             })}
           </ul>
-          <div className="pt-40">
-            <p className="uppercase tracking-widget">
-              Let{encodeURI("'")}s connect
+          <div className="pt-10 md:pt-40">
+            <p className="hidden md:block tracking-widget">
+              <Trans page="headers" k="contact" />
             </p>
             <IconList />
           </div>

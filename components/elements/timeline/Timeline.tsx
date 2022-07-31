@@ -1,5 +1,5 @@
 import React from "react";
-import { blocks, IBlock } from "./data";
+import { blocks, IBlock } from "../../../translations/cv";
 
 const contentBg = "bg-transparent";
 const contentShadow = ""; // "shadow-md";
@@ -29,13 +29,13 @@ function Timeline() {
 export default Timeline;
 
 function IconAndLine({ side }: { side: "normal" | "hidden" }) {
-  const container = "col-start-5 col-end-6 md:mx-auto relative mr-10";
+  const container = "col-start-5 col-end-6 mx-auto relative mr-10";
   const inside1 = (
     <div className="h-full w-6 flex items-center justify-center">
       <div className={`h-full w-1 _bg-contrast pointer-events-none`}></div>
     </div>
   );
-  const inside2 = (
+  const bullet = (
     <div
       className={`w-6 h-6 absolute top-1/2 -mt-3 rounded-full _bg-contrast`}
     ></div>
@@ -43,13 +43,13 @@ function IconAndLine({ side }: { side: "normal" | "hidden" }) {
   const iconAndLine = (
     <div className={`${container}`}>
       {inside1}
-      {inside2}
+      {bullet}
     </div>
   );
   const hiddenIconAndLineForRightSide = (
     <div className={`xl:hidden ${container}`}>
       {inside1}
-      {inside2}
+      {bullet}
     </div>
   );
   return side === "normal" ? iconAndLine : hiddenIconAndLineForRightSide;
@@ -59,7 +59,7 @@ function Content({ props }: { props: any }) {
   const { side } = props;
 
   const iconAndLine = <IconAndLine side="normal" />;
-  const container = "flex md:contents";
+  const container = "flex  contents";
   const element = <Element props={props} />;
   const left = (
     <div className={`${container} flex-row-reverse`}>
