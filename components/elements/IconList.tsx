@@ -1,7 +1,7 @@
 import { AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
 
-const IconList = () => {
+function IconList() {
   const linkedIn = <FaLinkedinIn />;
   const email = <AiOutlineMail />;
   const twitter = <FaTwitter />;
@@ -15,5 +15,5 @@ const IconList = () => {
       ))}
     </div>
   );
-};
+}
 export default IconList;

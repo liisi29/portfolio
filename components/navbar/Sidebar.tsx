@@ -11,7 +11,7 @@ export interface IProps {
   pages: { link: string; text: string }[];
 }
 
-const Sidebar = ({ showSidebar, handleCloseClick, pages }: IProps) => {
+function Sidebar({ showSidebar, handleCloseClick, pages }: IProps) {
   const linkedIn = <FaLinkedinIn />;
   const email = <AiOutlineMail />;
   const twitter = <FaTwitter />;
@@ -59,5 +59,5 @@ const Sidebar = ({ showSidebar, handleCloseClick, pages }: IProps) => {
       </div>
     </>
   );
-};
+}
 export default Sidebar;

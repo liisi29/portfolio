@@ -20,17 +20,17 @@ function Cloud({
 
   return (
     <div
-      className={`${horizontal1} ${vertical1} h-[30rem] lg:h-full w-2/5 w-max-[30%] relative lg:absolute`}
+      className={`hidden md:block ${horizontal1} ${vertical1} h-[30rem] lg:h-full w-2/5 w-max-[30%] relative lg:absolute`}
     >
       {items.map((el, i) => (
         <div
           style={{ animationDelay: `${i / 4}s` }}
           key={el.text}
           className={`${el.size} ${el.top} ${el.horizontal} ${horizontal2} ${vertical2} 
-          transition-all 
+          transition-all w-fit
           _animation-fill-backwards 
           text-xl 
-          text-gray-200 
+          text-gray-200 opacity-60 xl:opacity-100         
           uppercase 
           absolute`}
         >

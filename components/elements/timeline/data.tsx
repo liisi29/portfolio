@@ -3,7 +3,7 @@ import { text } from "stream/consumers";
 const texts = {
   turnit: [
     "Architecting and implementing the front end of a webcashier application that is used daily by ticket agents in bus- and trainstations",
-    "Started from scratch",
+    "Started from zero",
     "Have maintained and developed the application front end alone for more than 5 years",
     "Have done user reasearch of clients, proposed and implemented scalable solutions to issues identified during the research",
     "The application is in everyday use in several countries in Europe, in Africa and USA",

@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
+import { VscTerminalCmd } from "react-icons/vsc";
 import { useState } from "react";
 import Sidebar from "./Sidebar";
 
-const NavBar = () => {
+function NavBar() {
   const [showSidebar, setShowSidebar] = useState(false);
 
   const handleCloseClick = () => {
@@ -56,5 +57,5 @@ const NavBar = () => {
       ></Sidebar>
     </header>
   );
-};
+}
 export default NavBar;

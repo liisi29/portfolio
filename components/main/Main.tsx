@@ -3,10 +3,10 @@ import IconList from "../elements/IconList";
 import SkillCloud from "../elements/cloud/SkillCloud";
 import EduCloud from "../elements/cloud/EduCloud";
 
-const Main = () => {
+function Main() {
   return (
     <section className="w-full h-screen text-center">
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
+      <div className="max-w-[1240px] z-10  w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="py-4 m-auto">Hi, my name is</p>
           <h1>
@@ -27,5 +27,5 @@ const Main = () => {
       </div>
     </section>
   );
-};
+}
 export default Main;
