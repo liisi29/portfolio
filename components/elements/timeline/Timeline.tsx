@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { blocks, IBlock } from "../../../translations/cv";
 
@@ -116,6 +117,9 @@ function Element({ props }: { props: Partial<IBlock> }) {
             </div>
           ))}
         </div>
+      </div>
+      <div>
+        <Link href="/webcashier">Read more</Link>
       </div>
     </div>
   );

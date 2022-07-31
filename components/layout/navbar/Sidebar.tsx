@@ -3,7 +3,7 @@ import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
 import Trans from "translations/Trans";
-import IconList from "../elements/IconList";
+import IconList from "../../elements/IconList";
 
 export interface IProps {
   showSidebar: boolean;
