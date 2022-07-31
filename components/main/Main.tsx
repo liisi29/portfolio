@@ -21,9 +21,7 @@ function Main() {
           <p className="py-4 mx-w-[70%] m-auto">
             <Trans page="main" k="iAm" />
           </p>
-          <div className="flex items-center justify-center max-w-[330px] m-auto py-4">
-            <IconList />
-          </div>
+          <IconList />
         </div>
       </div>
       <div className="hidden lg:block">

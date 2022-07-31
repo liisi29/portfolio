@@ -1,4 +1,5 @@
 import IconList from "@components/elements/IconList";
+import SectionHeader from "@components/elements/SectionHeader";
 import React, { useState } from "react";
 import BigArrow from "../elements/BigArrow";
 
@@ -18,12 +19,12 @@ function Contact() {
   };
   return (
     <section id="contact" className="_bg-dark">
+      <SectionHeader section="contact" sectionColor="dark" />
       <BigArrow />
-      <article>
-        <div>
-          <h2 className="py-2">Liisi Raidaru</h2>
-          <IconList />
-        </div>
+      <article className="max-w-[1240px] z-10  w-full h-full mx-auto text-center">
+        <h2 className="py-2">Liisi Raidaru</h2>
+        <IconList />
+        liisi.raidaru@gmail.com
       </article>
     </section>
   );
