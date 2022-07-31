@@ -16,7 +16,7 @@ function Timeline() {
   return (
     <div className="w-full">
       <div
-        className={`flex flex-col md:grid grid-cols-9 mx-auto p-2 ${textColor.p}`}
+        className={`flex flex-col xl:grid grid-cols-9 mx-auto p-2 ${textColor.p}`}
       >
         {blocks.map((el, i) => {
           return <Content key={i} props={el} />;
@@ -28,19 +28,37 @@ function Timeline() {
 
 export default Timeline;
 
+function IconAndLine({ side }: { side: "normal" | "hidden" }) {
+  const container = "col-start-5 col-end-6 md:mx-auto relative mr-10";
+  const inside1 = (
+    <div className="h-full w-6 flex items-center justify-center">
+      <div className={`h-full w-1 _bg-contrast pointer-events-none`}></div>
+    </div>
+  );
+  const inside2 = (
+    <div
+      className={`w-6 h-6 absolute top-1/2 -mt-3 rounded-full _bg-contrast`}
+    ></div>
+  );
+  const iconAndLine = (
+    <div className={`${container}`}>
+      {inside1}
+      {inside2}
+    </div>
+  );
+  const hiddenIconAndLineForRightSide = (
+    <div className={`xl:hidden ${container}`}>
+      {inside1}
+      {inside2}
+    </div>
+  );
+  return side === "normal" ? iconAndLine : hiddenIconAndLineForRightSide;
+}
+
 function Content({ props }: { props: any }) {
   const { side } = props;
 
-  const iconAndLine = (
-    <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
-      <div className="h-full w-6 flex items-center justify-center">
-        <div className={`h-full w-1 _bg-contrast pointer-events-none`}></div>
-      </div>
-      <div
-        className={`w-6 h-6 absolute top-1/2 -mt-3 rounded-full _bg-contrast`}
-      ></div>
-    </div>
-  );
+  const iconAndLine = <IconAndLine side="normal" />;
   const container = "flex md:contents";
   const element = <Element props={props} />;
   const left = (
@@ -53,6 +71,7 @@ function Content({ props }: { props: any }) {
     <div className={`${container}`}>
       {iconAndLine}
       {element}
+      <IconAndLine side="hidden" />
     </div>
   );
 

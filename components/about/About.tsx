@@ -7,8 +7,8 @@ function About() {
 
   return (
     <section id="about" className="_bg-skew">
-      <article className="py-40">
-        <div className="col-span-2">
+      <article className="flex flex-col xl:flex-row text-justify">
+        <div className="py-40">
           <p className="uppercase text-xl tracking-wider text-white">
             About me
           </p>
@@ -36,7 +36,7 @@ function About() {
         <div
           className={`${
             imageIsLoaded ? "animate-[slideFromRight_1s_ease-in-out]" : ""
-          } w-full h-auto m-auto justify-center p-4`}
+          } w-full h-auto m-auto justify-center p-4 max-w-lg`}
         >
           <Image
             className="rounded-xl"

@@ -30,7 +30,7 @@ function Cloud({
           transition-all w-fit
           _animation-fill-backwards 
           text-xl 
-          text-gray-200 opacity-60 xl:opacity-100         
+          text-gray-200 opacity-40 2xl:opacity-100         
           uppercase 
           absolute`}
         >

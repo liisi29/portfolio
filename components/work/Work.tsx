@@ -5,7 +5,7 @@ function Work() {
   return (
     <section id="work" className="">
       <article>
-        <div className="col-span-3">
+        <div className="">
           <Timeline />
         </div>
       </article>

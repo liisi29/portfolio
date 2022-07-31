@@ -23,10 +23,10 @@ html {
     @apply cursor-pointer
   }
   section {
-    @apply w-full flex items-center relative py-[2rem] px-[20%] 
+    @apply w-full flex items-center relative py-[2rem] px-4 lg:px-[20%] 
   }
   article {
-    @apply max-w-[1240px] m-auto md:grid grid-cols-3 gap-8
+    @apply max-w-[1240px] m-auto 
   }
   button {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[blue] to-[red] text-[#353239]
@@ -38,7 +38,7 @@ html {
     @apply bg-red-600;
   }
   ._bg-skew {
-    @apply bg-slate-700 text-[#fff] py-[10rem] px-[20%] 
+    @apply bg-slate-700 text-[#fff] py-[10rem]
   }
   ._bg-white {
     @apply bg-[white] 
@@ -52,7 +52,7 @@ html {
  
 }
 @layer utilities {
-  @screen lg{
+  @screen xl{
     ._bg-skew {    
       clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);  
     }
