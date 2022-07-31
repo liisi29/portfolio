@@ -20,7 +20,7 @@ function Cloud({
 
   return (
     <div
-      className={`hidden md:block ${horizontal1} ${vertical1} h-[30rem] lg:h-full w-2/5 w-max-[30%] relative lg:absolute`}
+      className={`hidden lg:block ${horizontal1} ${vertical1} h-[30rem] lg:h-full w-2/5 w-max-[30%] relative lg:absolute`}
     >
       {items.map((el, i) => (
         <div

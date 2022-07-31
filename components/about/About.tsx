@@ -7,7 +7,7 @@ function About() {
 
   return (
     <section id="about" className="_bg-skew">
-      <article>
+      <article className="py-40">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-wider text-white">
             About me

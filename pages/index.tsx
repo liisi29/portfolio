@@ -19,10 +19,6 @@ export default function Home() {
       </Head>
       <NavBar />
       <Main />
-      <div className="block lg:hidden">
-        <SkillCloud />
-        <EduCloud />
-      </div>
       <About />
       <Work />
       <Contact />

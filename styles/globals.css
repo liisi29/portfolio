@@ -23,7 +23,7 @@ html {
     @apply cursor-pointer
   }
   section {
-    @apply w-full p-2 flex items-center relative py-[2rem] px-[20%] 
+    @apply w-full flex items-center relative py-[2rem] px-[20%] 
   }
   article {
     @apply max-w-[1240px] m-auto md:grid grid-cols-3 gap-8
@@ -52,9 +52,12 @@ html {
  
 }
 @layer utilities {
-  ._bg-skew {    
-    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);  
-  }
+  @screen lg{
+    ._bg-skew {    
+      clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);  
+    }
+}
+  
   ._link {
     @apply hover:scale-110 ease-in duration-100 cursor-pointer
   }
