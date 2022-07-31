@@ -80,7 +80,7 @@ function Content({ props }: { props: any }) {
 }
 
 function Element({ props }: { props: Partial<IBlock> }) {
-  const { title, body, side, date, company } = props;
+  const { title, body, side, date, company, more } = props;
   const col =
     side === "left" ? "col-start-1 col-end-5" : "col-start-6 col-end-10";
   return (
@@ -118,9 +118,15 @@ function Element({ props }: { props: Partial<IBlock> }) {
           ))}
         </div>
       </div>
-      <div>
-        <Link href="/webcashier">Read more</Link>
-      </div>
+      {more && (
+        <div className="p-8 ">
+          <div
+            className={`_text-contrast _link underline before:content-["▶"] before:absolute before:left-0 before:top-0 relative pl-8`}
+          >
+            <Link href={more.link}>{more.label}</Link>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

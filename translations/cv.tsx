@@ -45,6 +45,10 @@ export const blocks: IBlock[] = [
       "planning",
     ],
     date: "Since 2016",
+    more: {
+      label: "Read more about my main project",
+      link: "/webcashier",
+    },
   },
   {
     title: "Frontend Developer",
@@ -85,4 +89,8 @@ export interface IBlock {
   body: string[];
   date: string;
   tech: string[];
+  more?: {
+    link: string;
+    label: string;
+  };
 }
