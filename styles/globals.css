@@ -38,10 +38,10 @@ html {
     @apply bg-red-600;
   }
   ._bg-skew {
-    @apply bg-slate-700 text-[#fff] py-[10rem]
+    @apply py-[10rem]
   }
   ._bg-white {
-    @apply bg-[white] 
+    @apply bg-[white] text-gray-600
   }
   ._bg-dark {
     @apply bg-slate-700 text-[#fff] 

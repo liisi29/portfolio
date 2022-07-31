@@ -8,7 +8,7 @@ function About() {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
 
   return (
-    <section id="about" className="_bg-skew">
+    <section id="about" className="_bg-skew _bg-dark">
       <SectionHeader section="about" sectionColor="dark" />
       <article className="flex flex-col xl:flex-row text-justify">
         <div className="lg:pr-4">

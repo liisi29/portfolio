@@ -1,3 +1,6 @@
+import LayoutPage from "@components/layout/LayoutPage";
+import Head from "next/head";
+
 export default function WebCashier() {
-  return <div>This is webcashier</div>;
+  return <LayoutPage section="webcashier">This is webcashier</LayoutPage>;
 }

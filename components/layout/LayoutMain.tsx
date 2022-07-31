@@ -2,7 +2,8 @@ import React, { FC, PropsWithChildren } from "react";
 import NavBar from "./navbar/Navbar";
 import Head from "next/head";
 
-function Layout({ children }: PropsWithChildren) {
+function LayoutMain({ children }: PropsWithChildren) {
+  console.log(children);
   return (
     <div>
       <Head>
@@ -17,4 +18,4 @@ function Layout({ children }: PropsWithChildren) {
   );
 }
 
-export default Layout;
+export default LayoutMain;

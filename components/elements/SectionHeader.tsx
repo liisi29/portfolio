@@ -5,7 +5,7 @@ function SectionHeader({
   section,
   sectionColor,
 }: {
-  section: "about" | "work" | "contact";
+  section: Section;
   sectionColor?: "light" | "dark";
 }) {
   const color = sectionColor === "dark" ? "text-white" : "";
@@ -19,3 +19,5 @@ function SectionHeader({
 }
 
 export default SectionHeader;
+
+type Section = "about" | "work" | "contact" | "webcashier";
