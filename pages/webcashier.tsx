@@ -1,9 +1,11 @@
-import Bus from "@components/bus/bus";
+import Bus from "@components/bus/Bus";
 import { Carousel } from "@components/carusel/Carousel";
 import LayoutPage from "@components/layout/LayoutPage";
 import Image from "next/image";
+import { texts } from "@translations/webcashier";
 
 export default function WebCashier() {
+  const { introduction, lessons } = texts;
   return (
     <LayoutPage section="webcashier">
       <Bus />
@@ -31,48 +33,69 @@ export default function WebCashier() {
           </div>
         </div>
         <div>
-          <h4>Introduction</h4>
+          <h2>{introduction.title}</h2>
           <ul>
-            <li>Sell tickets</li>
-            <li>Check in the bus</li>
-            <li>Mark no shows</li>
-            <li>Release seats</li>
-            <li>View bought tickets</li>
-            <li>Return tickets</li>
-            <li>Modify tickets</li>
-            <li>Add luggage</li>
-            <li>Change seats</li>
-            <li>Sell different addons</li>
-            <li>Download reports</li>
-            <li>Sell vouchers</li>
-            <li>Connect bus tickets to different client cards</li>
-            <li>Etc... It is a big application :</li>
+            {introduction.list.map((t: string, i: number) => (
+              <li
+                key={i}
+                className={`before:content-["▶"] before:_text-contrast before:absolute before:left-0 before:top-0 relative pl-8`}
+              >
+                <span>{t}</span>
+              </li>
+            ))}
           </ul>
         </div>
         <div>
-          <h4>Technology</h4>
-          <p>
-            We chose Aurelia as our main framework. Also the project is based on
-            typescript, bootstrap and REST api.
-          </p>
-          <h4>Ehh?! What is Aurelia? Never heard of it</h4>
-          <p>
-            Yes.. Well.. Aurelia is a javascript framework made by Rob Eisenberg
-            https://aurelia.io/
-          </p>
-          <p>
-            Rob used to be one of the main developers behind Angular, but then
-            decided to make his own framework
-          </p>
-          <p>
-            At the time Aurelia was fresh and modern. Unopinionated. Highly
-            configurable, easy to learn. It really was and is a good framework.
-            Unfortunately Rob Eisenberg was hired by Microsoft and Aurelia never
-            got the full fame..
-          </p>
+          <h2>Technology</h2>
+          <div className="flex">
+            <div>
+              <p>
+                We chose Aurelia as our main framework. Also the project is
+                based on typescript, bootstrap and REST api.
+              </p>
+              <h3>Ehh?! What is Aurelia? Never heard of it</h3>
+
+              <div className="flex">
+                Yes.. Well..{" "}
+                <a
+                  href="https://aurelia.io/"
+                  className="items-center flex px-3"
+                >
+                  <div className="underline _link _text-contrast _animation-fill-backwards">
+                    Aurelia
+                  </div>
+                </a>{" "}
+                is a javascript framework{"   "}
+                <a
+                  className="items-center flex px-3"
+                  href="https://youtu.be/fi33aDFKvxE"
+                >
+                  <div className="underline _link _text-contrast">
+                    made by Rob Eisenberg
+                  </div>
+                </a>
+              </div>
+              <p>
+                Rob used to be one of the main developers behind Angular, but
+                then decided to make his own framework
+              </p>
+              <p>
+                At the time Aurelia was fresh and modern. Unopinionated. Highly
+                configurable, easy to learn. It really was and is a good
+                framework. Unfortunately Rob Eisenberg was hired by Microsoft
+                and Aurelia never got the full fame..
+              </p>
+            </div>
+            <img
+              src="https://aurelia.io/styles/images/aurelia-icon.svg"
+              alt="aurelia"
+              width="256"
+              height="256"
+            />
+          </div>
         </div>
         <div>
-          <h4>What I did?</h4>
+          <h2>What I did?</h2>
           <p>
             The first choices were made by our lead architect, but later I was
             quite on my own.
@@ -84,7 +107,7 @@ export default function WebCashier() {
           <p>I did not design the visuals and I did not design the UX!</p>
         </div>
         <div>
-          <h4>Work processes</h4>
+          <h3>Work processes</h3>
           <p>
             All the processes have changed back and forth several times during
             the years.
@@ -100,16 +123,16 @@ export default function WebCashier() {
           </p>
         </div>
         <div>
-          <h4>What I learned?</h4>
+          <h2>{lessons.title}</h2>
           <ul>
-            <li>Research the end user</li>
-            <li>Love your team</li>
-            <li>No spaghetti code! Please!</li>
-            <li>
-              Every <span>cut the corder - the deadline is coming</span> will
-              hurt you in the end
-            </li>
-            <li>The importance of tests!</li>
+            {lessons.list.map((t: string, i: number) => (
+              <li
+                key={i}
+                className={`before:content-["▶"] before:_text-contrast before:absolute before:left-0 before:top-0 relative pl-8`}
+              >
+                <span>{t}</span>
+              </li>
+            ))}
           </ul>
         </div>
         <Carousel />

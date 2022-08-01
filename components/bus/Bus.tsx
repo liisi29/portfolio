@@ -3,7 +3,7 @@ import styles from "./bus.module.css";
 
 function Bus() {
   return (
-    <div className="fixed w-[200%] overflow-hidden left-0 top-[100px] z-10">
+    <div className="fixed w-[200%] overflow-hidden left-0 top-[100px] -z-10">
       <div
         style={{ width: "100px" }}
         className="animate-[bus_10s_linear_infinite]"
