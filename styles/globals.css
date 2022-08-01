@@ -57,7 +57,16 @@ html {
       clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);  
     }
 }
-  
+.carousel {
+  display: inline-flex;
+  overflow-x: hidden;
+/*  scroll snap is a great feature which will center the image on snap on touch screen devices  */
+  scroll-snap-type: x mandatory;
+/* all below will hide the scrollbar on all browsers.    */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
   ._link {
     @apply hover:scale-110 ease-in duration-100 cursor-pointer
   }

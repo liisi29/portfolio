@@ -31,7 +31,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "pages/_app.tsx"  ],
+, "pages/_app.tsx", "components/carusel/Carousel.jsx"  ],
   "exclude": [
     "node_modules"
   ]

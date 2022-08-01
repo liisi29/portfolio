@@ -6,7 +6,7 @@ import SectionHeader from "@components/elements/SectionHeader";
 function LayoutPage({
   children,
   section,
-}: PropsWithChildren & { section: "webcashier" }) {
+}: PropsWithChildren & { section: Pages }) {
   useEffect(() => {
     document?.querySelector("body")?.classList.add("_bg-dark");
     return () => document?.querySelector("body")?.classList.remove("_bg-dark");
@@ -22,3 +22,5 @@ function LayoutPage({
 }
 
 export default LayoutPage;
+
+type Pages = "webcashier";

@@ -8,7 +8,8 @@
     "headers": {
         "about": "About me",
         "work": "Where I've worked",
-        "contact": "Let's get in touch"
+        "contact": "Let's get in touch",
+        "webcashier": "My main project"
     },
     "main": {
         "greeting": "Hi, my name is",
