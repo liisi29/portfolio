@@ -47,7 +47,7 @@ export const blocks: IBlock[] = [
     date: "Since 2016",
     more: {
       label: "Read more about my main project",
-      link: "/webcashier",
+      link: "/cashier",
     },
   },
   {

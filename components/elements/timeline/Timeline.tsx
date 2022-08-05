@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { blocks, IBlock } from "../../../translations/cv";
+import ListOfTexts from "../ListOfTexts";
 
 const contentBg = "bg-transparent";
 const contentShadow = ""; // "shadow-md";
@@ -91,16 +92,7 @@ function Element({ props }: { props: Partial<IBlock> }) {
       </div>
 
       <div className="leading-tight text-justify">
-        <ul>
-          {(body || []).map((t, i) => (
-            <li
-              key={`time${i}`}
-              className={`before:content-["▶"] before:_text-contrast before:absolute before:left-0 before:top-0 relative pl-8`}
-            >
-              <span>{t}</span>
-            </li>
-          ))}
-        </ul>
+        <ListOfTexts list={body} />
         <div className="px-8 py-4 flex flex-wrap">
           {props.tech?.map((t, i) => (
             <div className="_text-contrast whitespace-nowrap" key={t}>
