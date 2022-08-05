@@ -2,10 +2,23 @@ import Bus from "@components/bus/Bus";
 import { Carousel } from "@components/carusel/Carousel";
 import LayoutPage from "@components/layout/LayoutPage";
 import Image from "next/image";
-import { texts } from "@translations/webcashier";
+import { Aurelia, texts } from "@translations/webcashier";
 
 export default function WebCashier() {
   const { introduction, lessons } = texts;
+
+  const aureliaLink = (
+    <a href="https://aurelia.io/" className="items-center flex px-3">
+      <span className="underline _link _text-contrast _animation-fill-backwards">
+        Aurelia
+      </span>
+    </a>
+  );
+  const robLink = (
+    <a className="items-center flex px-3" href="https://youtu.be/fi33aDFKvxE">
+      <span className="underline _link _text-contrast">Rob Eisenberg</span>
+    </a>
+  );
   return (
     <LayoutPage section="webcashier">
       <Bus />
@@ -23,13 +36,7 @@ export default function WebCashier() {
         <div className="text-right pb-20">
           <small>It looks like this:</small>
           <div className="max-w-full flex flex-wrap justify-center border-double border-4 bg-slate-700 m-5">
-            <Image
-              className="rounded-xl "
-              src="/cashier/sell.jpg"
-              alt="/"
-              width="1700"
-              height="935"
-            ></Image>
+            <Carousel />
           </div>
         </div>
         <div>
@@ -47,51 +54,20 @@ export default function WebCashier() {
         </div>
         <div>
           <h2>Technology</h2>
-          <div className="flex">
-            <div>
-              <p>
-                We chose Aurelia as our main framework. Also the project is
-                based on typescript, bootstrap and REST api.
-              </p>
-              <h3>Ehh?! What is Aurelia? Never heard of it</h3>
-
-              <div className="flex">
-                Yes.. Well..{" "}
-                <a
-                  href="https://aurelia.io/"
-                  className="items-center flex px-3"
-                >
-                  <div className="underline _link _text-contrast _animation-fill-backwards">
-                    Aurelia
-                  </div>
-                </a>{" "}
-                is a javascript framework{"   "}
-                <a
-                  className="items-center flex px-3"
-                  href="https://youtu.be/fi33aDFKvxE"
-                >
-                  <div className="underline _link _text-contrast">
-                    made by Rob Eisenberg
-                  </div>
-                </a>
-              </div>
-              <p>
-                Rob used to be one of the main developers behind Angular, but
-                then decided to make his own framework
-              </p>
-              <p>
-                At the time Aurelia was fresh and modern. Unopinionated. Highly
-                configurable, easy to learn. It really was and is a good
-                framework. Unfortunately Rob Eisenberg was hired by Microsoft
-                and Aurelia never got the full fame..
-              </p>
+          <p>{texts.tech.paragraphs[0]}</p>
+        </div>
+        <div>
+          <h2>Aurelia</h2>
+          <div className="">
+            <Aurelia aurelia={aureliaLink} rob={robLink}></Aurelia>
+            <div className="right">
+              <Image
+                src="/cashier/aurelia-icon.svg"
+                alt="aurelia"
+                width={200}
+                height={200}
+              ></Image>
             </div>
-            <img
-              src="https://aurelia.io/styles/images/aurelia-icon.svg"
-              alt="aurelia"
-              width="256"
-              height="256"
-            />
           </div>
         </div>
         <div>
@@ -135,7 +111,6 @@ export default function WebCashier() {
             ))}
           </ul>
         </div>
-        <Carousel />
       </div>
     </LayoutPage>
   );

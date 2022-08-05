@@ -7,14 +7,19 @@ function LayoutPage({
   children,
   section,
 }: PropsWithChildren & { section: Pages }) {
-  useEffect(() => {
-    document?.querySelector("body")?.classList.add("_bg-dark");
-    return () => document?.querySelector("body")?.classList.remove("_bg-dark");
-  }, []);
   return (
-    <section id="about" className="_bg-skew _bg-white">
+    <section
+      className="_bg-white before:content-[''] 
+    before:w-[1000px] before:h-[1000px]
+    before:bg-slate-700 
+    before:left-[-100px] before:top-[-1000px]
+    before:absolute
+    before:rotate-[-100deg]
+    "
+    >
+      <div className="test">.</div>
       <SectionHeader section={section} />
-      <article className="flex flex-col xl:flex-row text-justify">
+      <article className="flex flex-col xl:flex-row text-justify ">
         {children}
       </article>
     </section>

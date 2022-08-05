@@ -5,9 +5,11 @@
 
 import Image from "next/image";
 import { createRef, useState } from "react";
+import styles from "./carousel.module.css";
 
 export function Carousel() {
   const images = [
+    "/cashier/sell.jpg",
     "/cashier/baggage.jpg",
     "/cashier/cart.jpg",
     "/cashier/find.jpg",
@@ -96,7 +98,7 @@ export function Carousel() {
     // absolute positioning on each side of the image.
     <div className="p-12 flex justify-center max-w-full  items-center">
       <div className="relative w-full">
-        <div className="carousel">
+        <div className={styles._carousel}>
           {sliderControl(true)}
           {images.map((img, i) => (
             <div

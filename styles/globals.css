@@ -10,6 +10,7 @@ html {
   body {
     @apply bg-[#f9f9f9] text-gray-600 tracking-wide font-mono text-lg
   }
+  
   h1 {
     @apply font-bold text-6xl
   }
@@ -56,17 +57,19 @@ html {
     ._bg-skew {    
       clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);  
     }
-}
-.carousel {
-  display: inline-flex;
-  overflow-x: hidden;
-/*  scroll snap is a great feature which will center the image on snap on touch screen devices  */
-  scroll-snap-type: x mandatory;
-/* all below will hide the scrollbar on all browsers.    */
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* For Firefox */
-  -ms-overflow-style: none; /* For Internet Explorer and Edge */
-}
+  }
+  ._dark-triangle-for-white-body:before {
+    content: "";
+    width: 1000px;
+    background-color: blue;
+    left: -100px;
+    position: absolute;
+    top: -1000px;
+    -webkit-transform: rotate(-100deg);
+    height: 1000px;
+  }
+
+
   ._link {
     @apply hover:scale-110 ease-in duration-100 cursor-pointer
   }
