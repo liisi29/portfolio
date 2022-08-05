@@ -29,50 +29,47 @@ function Timeline() {
 
 export default Timeline;
 
-function IconAndLine({ side }: { side: "normal" | "hidden" }) {
-  const container = "col-start-5 col-end-6 mx-auto relative mr-10";
+function BubbleAndLine({ show }: { show: "always" | "xl" | "sm" }) {
+  const container =
+    "col-start-5 col-end-6 mx-auto relative mr-10 contents xl:block";
   const inside1 = (
     <div className="h-full w-6 flex items-center justify-center">
       <div className={`h-full w-1 _bg-contrast pointer-events-none`}></div>
     </div>
   );
-  const bullet = (
+  const bubble = (
     <div
-      className={`w-6 h-6 absolute top-1/2 -mt-3 rounded-full _bg-contrast`}
+      className={`bubble w-6 h-6 top-1/2 -mt-3 rounded-full _bg-contrast mx-auto`}
     ></div>
   );
+  const showClassName = `
+  ${show === "always" ? "block" : ""} 
+  ${show === "xl" ? "hidden xl:block" : ""} 
+  ${show === "sm" ? "block xl:hidden" : ""}`;
   const iconAndLine = (
-    <div className={`${container}`}>
+    <div className={`bubble-and-line-container ${container} ${showClassName}`}>
       {inside1}
-      {bullet}
+      {bubble}
     </div>
   );
-  const hiddenIconAndLineForRightSide = (
-    <div className={`xl:hidden ${container}`}>
-      {inside1}
-      {bullet}
-    </div>
-  );
-  return side === "normal" ? iconAndLine : hiddenIconAndLineForRightSide;
+  return iconAndLine;
 }
 
 function Content({ props }: { props: any }) {
   const { side } = props;
-
-  const iconAndLine = <IconAndLine side="normal" />;
   const container = "flex  contents";
   const element = <Element props={props} />;
   const left = (
-    <div className={`${container} flex-row-reverse`}>
+    <div className={`${container} flex-row-reverse time-line-left`}>
       {element}
-      {iconAndLine}
+      <BubbleAndLine show="always" />
     </div>
   );
   const right = (
-    <div className={`${container}`}>
-      {iconAndLine}
+    <div className={`${container} time-line-right`}>
+      <BubbleAndLine show="xl" />
       {element}
-      <IconAndLine side="hidden" />
+      <BubbleAndLine show="sm" />
     </div>
   );
 
