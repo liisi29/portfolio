@@ -17,7 +17,6 @@ function LayoutPage({
     before:rotate-[-100deg]
     "
     >
-      <div className="test">.</div>
       <SectionHeader section={section} />
       <article className="flex flex-col xl:flex-row text-justify ">
         {children}

@@ -3,34 +3,43 @@ import LayoutPage from "@components/layout/LayoutPage";
 import Image from "next/image";
 import { texts } from "@translations/webcashier";
 import Aurelia from "./aurelia";
-import Conclusion from "./conclusion";
+import LifeLessons from "./lifeLessons";
 import Stack from "./stack";
 import Intro from "./intro";
 import Display from "./display";
-import Dev from "./dev";
 import Me from "./me";
+import Application from "./application";
+import Responsibilities from "./responsibilities";
 
 export default function WebCashier() {
   return (
     <LayoutPage section="webcashier">
       <Bus />
       <div className="relative">
-        <div className="text-right pb-20">
+        <div className="">
           <h1>Webcashier</h1>
           <h2>My biggest project so far</h2>
         </div>
-        <div className="text-right">
-          <p>
-            Since 2016 I have been developing webcashier application for bus-and
-            trainstations.
-          </p>
-        </div>
-        <Display />
-        <Me />
-        <Dev />
         <Intro />
         <Stack />
-        <Conclusion />
+        <Responsibilities />
+        <div className="">
+          <div className="w-[50%] inline-block">
+            <Me />
+          </div>
+          <div className="ml-12 mt-12 w-[45%] inline-block">
+            <Image
+              src="/cashier/modify.jpg"
+              alt="modify"
+              width={983}
+              height={591}
+            ></Image>
+          </div>
+        </div>
+        <LifeLessons />
+
+        <Application />
+        <Display />
         <Aurelia />
       </div>
     </LayoutPage>

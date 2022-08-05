@@ -1,16 +1,18 @@
+import BlockListWithTriangles from "@components/elements/BlockListWithTriangles";
+
 export default function Me() {
+  const { list } = {
+    list: [
+      `Interfaced with clients, providing technological expertise`,
+      `Proposed and implemented scalable solutions to issues identified during end-user research`,
+      `Planned, architectured and wrote the code for the application`,
+      `I did not design the visuals and I did not design the UX!`,
+      `But I worked closely with designer, management team and backenders to understand the needs, develop, document, and manage the application`,
+    ],
+  };
   return (
     <div>
-      <h2>What I did?</h2>
-      <p>
-        The first choices were made by our lead architect, but later I was quite
-        on my own.
-      </p>
-      <p>
-        Most of the time I made every decision regarding the tech architecture
-        of the application and wrote most of the code
-      </p>
-      <p>I did not design the visuals and I did not design the UX!</p>
+      <BlockListWithTriangles list={list} />
     </div>
   );
 }

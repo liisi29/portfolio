@@ -20,6 +20,9 @@ html {
   h3 {
     @apply text-2xl md:text-xl py-8
   }
+  h4 {
+    @apply text-2xl md:text-xl font-bold inline-block pr-6
+  }
   li {
     @apply cursor-pointer
   }

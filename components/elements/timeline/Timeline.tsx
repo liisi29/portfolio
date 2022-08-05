@@ -1,7 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import { blocks, IBlock } from "../../../translations/cv";
-import ListOfTexts from "../ListOfTexts";
+import BlockListWithTriangles from "../BlockListWithTriangles";
+import InlineListWithDots from "../InlineListWithDots";
 
 const contentBg = "bg-transparent";
 const contentShadow = ""; // "shadow-md";
@@ -92,19 +93,9 @@ function Element({ props }: { props: Partial<IBlock> }) {
       </div>
 
       <div className="leading-tight text-justify">
-        <ListOfTexts list={body} />
-        <div className="px-8 py-4 flex flex-wrap">
-          {props.tech?.map((t, i) => (
-            <div className="_text-contrast whitespace-nowrap" key={t}>
-              <span className="px-1">{t}</span>
-              <span
-                // prettier-ignore
-                className={`px-1 ${ i === (props.tech || []).length - 1 ? "hidden" : ""} `}
-              >
-                •
-              </span>
-            </div>
-          ))}
+        <BlockListWithTriangles list={body} />
+        <div className="px-8 py-4 ">
+          <InlineListWithDots list={props.tech} />
         </div>
       </div>
       {more && (

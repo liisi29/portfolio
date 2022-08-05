@@ -1,4 +1,4 @@
-function ListOfTexts({ list }: { list?: string[] }) {
+export default function BlockListWithTriangles({ list }: { list?: string[] }) {
   return (
     <ul>
       {(list || []).map((t: string, i: number) => (
@@ -12,4 +12,3 @@ function ListOfTexts({ list }: { list?: string[] }) {
     </ul>
   );
 }
-export default ListOfTexts;
