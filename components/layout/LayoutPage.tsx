@@ -1,5 +1,5 @@
 import React, { PropsWithChildren } from "react";
-import SectionHeader from "@components/elements/SectionHeader";
+import SectionHeader from "@components/elements/sectionHeader/SectionHeader";
 import { PageHeaderType } from "@components/elements/dto";
 
 function LayoutPage({

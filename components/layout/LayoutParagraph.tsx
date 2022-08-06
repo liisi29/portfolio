@@ -1,5 +1,5 @@
 import React, { FC, PropsWithChildren, useEffect } from "react";
-import SectionHeader from "@components/elements/SectionHeader";
+import SectionHeader from "@components/elements/sectionHeader/SectionHeader";
 import { ParagraphHeaderType } from "@components/elements/dto";
 
 export default function LayoutParagraph({
