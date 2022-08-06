@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import { useRouter } from "next/router";
 import SectionHeader from "@components/elements/SectionHeader";
-import Trans from "translations/Trans";
 
 const { list } = {
   list: [
