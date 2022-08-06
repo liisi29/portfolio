@@ -8,13 +8,15 @@ const en = {
   home: "Home",
   about: "About",
   work: "Work",
+  skills: "Skills",
   contact: "Contact",
 };
 const pages = [
   { link: "/", text: en.home, delay: "_animation-delay-2" },
   { link: "/#about", text: en.about, delay: "_animation-delay-3" },
   { link: "/#work", text: en.work, delay: "_animation-delay-4" },
-  { link: "/#contact", text: en.contact, delay: "_animation-delay-5" },
+  { link: "/skills", text: en.skills, delay: "_animation-delay-5" },
+  { link: "/#contact", text: en.contact, delay: "_animation-delay-6" },
 ];
 
 function NavBar() {
@@ -41,7 +43,7 @@ function NavBar() {
               return (
                 <Link href={p.link} key={p.link}>
                   <li
-                    className={`animate-pop _animation-fill-backwards ${p.delay} ml-10 hover:border-b _link`}
+                    className={`animate-pop _animation-fill-backwards ${p.delay} ml-10 _link`}
                   >
                     {p.text}
                   </li>
