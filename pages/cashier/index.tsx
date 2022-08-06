@@ -38,8 +38,8 @@ export default function WebCashier() {
         </div>
         <LifeLessons />
 
-        <Application />
         <Display />
+        <Application />
         <Aurelia />
       </div>
     </LayoutPage>

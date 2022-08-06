@@ -1,11 +1,11 @@
 import React, { PropsWithChildren } from "react";
 import SectionHeader from "@components/elements/sectionHeader/SectionHeader";
-import { PageHeaderType } from "@components/elements/dto";
+import { LayoutPageHeaderTranslation } from "@components/elements/sectionHeader/translations";
 
 function LayoutPage({
   children,
   section,
-}: PropsWithChildren & { section: PageHeaderType }) {
+}: PropsWithChildren & { section: LayoutPageHeaderTranslation }) {
   return (
     <section
       className="_bg-white before:content-[''] 

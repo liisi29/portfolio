@@ -1,9 +1,10 @@
 import LayoutParagraph from "@components/layout/LayoutParagraph";
 
-const { title, messages, list } = {
+const { title, quote, intro, list } = {
   title: "What I have learned",
-  messages: [
-    `"You learn most from the mistakes you make", they say. Oh, I should be smart as hell for believe me, I've made many..`,
+  quote: "You learn most from the mistakes you make",
+  intro: [
+    `Oh, I should be smart as hell for believe me, I've made many..`,
     `But after all is said and done I've always tried to take some time and think things over.`,
     `Some conclusions that I've made along the way:`,
   ],
@@ -26,7 +27,9 @@ export default function LifeLessons() {
       <div id="lifeLessons">
         <h2>{title}</h2>
         <div className="mb-4">
-          {messages.map((m, i) => (
+          <span className="italic font-semibold">{quote}</span>
+          <span>, they say.</span>
+          {intro.map((m, i) => (
             <div key={i}>{m}</div>
           ))}
         </div>

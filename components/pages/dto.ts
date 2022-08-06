@@ -1,1 +1,0 @@
-export type SectionOfMainPage = "about" | "work" | "headers" | "main" | "nav" | "footer";

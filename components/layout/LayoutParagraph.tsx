@@ -1,11 +1,11 @@
-import React, { FC, PropsWithChildren, useEffect } from "react";
+import React, { PropsWithChildren } from "react";
 import SectionHeader from "@components/elements/sectionHeader/SectionHeader";
-import { ParagraphHeaderType } from "@components/elements/dto";
+import { LayoutParagraphHeaderTranslation } from "@components/elements/sectionHeader/translations";
 
 export default function LayoutParagraph({
   children,
   section,
-}: PropsWithChildren & { section: ParagraphHeaderType }) {
+}: PropsWithChildren & { section: LayoutParagraphHeaderTranslation }) {
   return (
     <section className="_bg-white">
       <SectionHeader section={section} />

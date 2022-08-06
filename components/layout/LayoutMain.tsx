@@ -1,9 +1,8 @@
-import React, { FC, PropsWithChildren } from "react";
+import React, { PropsWithChildren } from "react";
 import NavBar from "./navbar/Navbar";
 import Head from "next/head";
 
 function LayoutMain({ children }: PropsWithChildren) {
-  console.log(children);
   return (
     <div>
       <Head>
