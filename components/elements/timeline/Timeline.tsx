@@ -4,6 +4,7 @@ import { blocks, IBlock } from "./cv";
 import BlockListWithTriangles from "../BlockListWithTriangles";
 import InlineListWithDots from "../InlineListWithDots";
 import LinkMainProject from "../links/LinkMainProject";
+import { useRouter } from "next/router";
 
 const contentBg = "bg-transparent";
 const contentShadow = ""; // "shadow-md";
@@ -83,6 +84,8 @@ function Element({ props }: { props: Partial<IBlock> }) {
   const { title, body, side, date, company, more } = props;
   const col =
     side === "left" ? "col-start-1 col-end-5" : "col-start-6 col-end-10";
+  const router = useRouter();
+
   return (
     <div
       className={`${col} ${contentBg} ${contentShadow} p-4 rounded-xl my-4 mr-auto relative`}
@@ -101,7 +104,7 @@ function Element({ props }: { props: Partial<IBlock> }) {
       </div>
       {more && (
         <div className="my-4">
-          <LinkMainProject />
+          <LinkMainProject back={"/#work"} />
         </div>
       )}
     </div>

@@ -9,6 +9,9 @@ import LifeLessons from "@components/pages/webcashier/lifeLessons";
 import Me from "@components/pages/webcashier/me";
 import Responsibilities from "@components/pages/webcashier/responsibilities";
 import Stack from "@components/pages/webcashier/stack";
+import LinkSkills from "@components/elements/links/LinkSkills";
+import LinkMainPageWork from "@components/elements/links/LinkMainPageWork";
+import LinkBack from "@components/elements/links/LinkBack";
 
 export default function WebCashier() {
   return (
@@ -36,6 +39,15 @@ export default function WebCashier() {
           </div>
         </div>
         <LifeLessons />
+        <div className="my-28 flex">
+          <div className="mr-4">
+            <LinkBack />
+          </div>
+          <div>
+            {" "}
+            <LinkSkills />
+          </div>
+        </div>
         <Display />
         <Application />
         <Aurelia />

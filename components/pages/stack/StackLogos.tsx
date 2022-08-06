@@ -8,7 +8,7 @@ const { message } = {
   message: "Since:",
 };
 
-const base = "/skills#";
+const base = "/skills/#";
 // prettier-ignore
 const { list } = {
   list: [
@@ -36,7 +36,7 @@ export default function StackLogos() {
   const router = useRouter();
 
   const clickHandler = (href: string) => {
-    router.push(href);
+    router.push(`${href}?back=/#stack`);
   };
 
   return (
