@@ -1,4 +1,4 @@
-import SectionHeader from "@components/elements/SectionHeader";
+import SectionHeader from "@components/elements/sectionHeader/SectionHeader";
 import React from "react";
 import Timeline from "../../elements/timeline/Timeline";
 

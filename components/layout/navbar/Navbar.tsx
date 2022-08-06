@@ -1,10 +1,21 @@
 import Link from "next/link";
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
-import { VscTerminalCmd } from "react-icons/vsc";
 import { useState } from "react";
 import Sidebar from "./Sidebar";
-import Trans from "translations/Trans";
+
+const en = {
+  home: "Home",
+  about: "About",
+  work: "Work",
+  contact: "Contact",
+};
+const pages = [
+  { link: "/", text: en.home, delay: "_animation-delay-2" },
+  { link: "/#about", text: en.about, delay: "_animation-delay-3" },
+  { link: "/#work", text: en.work, delay: "_animation-delay-4" },
+  { link: "/#contact", text: en.contact, delay: "_animation-delay-5" },
+];
 
 function NavBar() {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -16,12 +27,7 @@ function NavBar() {
     setShowSidebar(true);
   };
   // prettier-ignore
-  const pages = [
-    { link: "/", text: "home", delay: "_animation-delay-2" },
-    { link: "/#about", text: "about", delay: "_animation-delay-3" },
-    { link: "/#work", text: "work", delay: "_animation-delay-4" },
-    { link: "/#contact", text: "contact", delay: "_animation-delay-5" },
-  ];
+
   const linkedIn = <FaLinkedinIn />;
   const email = <AiOutlineMail />;
   const twitter = <FaTwitter />;
@@ -37,7 +43,7 @@ function NavBar() {
                   <li
                     className={`animate-pop _animation-fill-backwards ${p.delay} ml-10 hover:border-b _link`}
                   >
-                    <Trans page="nav" k={p.text} />
+                    {p.text}
                   </li>
                 </Link>
               );

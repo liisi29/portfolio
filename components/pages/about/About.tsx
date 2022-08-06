@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import SectionHeader from "@components/elements/SectionHeader";
+import SectionHeader from "@components/elements/sectionHeader/SectionHeader";
 
 const { list } = {
   list: [

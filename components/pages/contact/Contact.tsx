@@ -1,7 +1,7 @@
 import IconList from "@components/elements/IconList";
-import SectionHeader from "@components/elements/SectionHeader";
+import SectionHeader from "@components/elements/sectionHeader/SectionHeader";
 import React, { useState } from "react";
-import BigArrow from "../elements/BigArrow";
+import BigArrow from "../../elements/BigArrow";
 
 function Contact() {
   const [name, setName] = useState("");

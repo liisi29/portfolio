@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { blocks, IBlock } from "../../../translations/cv";
+import { blocks, IBlock } from "./cv";
 import BlockListWithTriangles from "../BlockListWithTriangles";
 import InlineListWithDots from "../InlineListWithDots";
 

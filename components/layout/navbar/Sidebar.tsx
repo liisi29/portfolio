@@ -2,8 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
-import Trans from "translations/Trans";
 import IconList from "../../elements/IconList";
+
+const { contact } = {
+  contact: "Contact",
+};
 
 export interface IProps {
   showSidebar: boolean;
@@ -39,17 +42,13 @@ function Sidebar({ showSidebar, handleCloseClick, pages }: IProps) {
             {pages.map((p, i) => {
               return (
                 <Link href={p.link} key={p.link}>
-                  <li className="py-4 _link">
-                    <Trans page="nav" k={p.text} />
-                  </li>
+                  <li className="py-4 _link">{p.text}</li>
                 </Link>
               );
             })}
           </ul>
           <div className="pt-10 md:pt-40">
-            <p className="hidden md:block tracking-widget">
-              <Trans page="headers" k="contact" />
-            </p>
+            <p className="hidden md:block tracking-widget">{contact}</p>
             <IconList />
           </div>
         </div>
