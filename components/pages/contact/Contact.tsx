@@ -3,7 +3,7 @@ import SectionHeader from "@components/elements/sectionHeader/SectionHeader";
 import React, { useState } from "react";
 import BigArrow from "../../elements/BigArrow";
 
-function Contact() {
+export default function Contact() {
   return (
     <section id="contact" className="_bg-dark">
       <SectionHeader section="contact" sectionColor="dark" />
@@ -16,5 +16,3 @@ function Contact() {
     </section>
   );
 }
-
-export default Contact;

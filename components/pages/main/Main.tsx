@@ -8,7 +8,7 @@ const { greeting, iLike, iAm } = {
   iAm: "I am a front end developer",
 };
 
-function Main() {
+export default function Main() {
   return (
     <section className="w-full h-screen text-center">
       <div className="max-w-[1240px] z-10  w-full h-full mx-auto flex justify-center items-center">
@@ -31,4 +31,3 @@ function Main() {
     </section>
   );
 }
-export default Main;

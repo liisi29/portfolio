@@ -26,6 +26,10 @@ const { title, list } = {
       body: `For testing we chose Mocha. At some point we had 90% of the application covered with tests.`,
     },
     {
+      title: "React",
+      body: `Since React became so popular we've injected some parts to the application that have been made in React`,
+    },
+    {
       title: "REST api",
       body: `The communication with backend is done over dedicated REST api.`,
     },

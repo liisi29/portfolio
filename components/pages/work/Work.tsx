@@ -2,7 +2,7 @@ import SectionHeader from "@components/elements/sectionHeader/SectionHeader";
 import React from "react";
 import Timeline from "../../elements/timeline/Timeline";
 
-function Work() {
+export default function Work() {
   return (
     <section id="work">
       <SectionHeader section="work" />
@@ -14,5 +14,3 @@ function Work() {
     </section>
   );
 }
-
-export default Work;

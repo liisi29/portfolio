@@ -14,7 +14,7 @@ const { list } = {
   ],
 };
 
-function About() {
+export default function About() {
   const [imageIsLoaded, setImageIsLoaded] = useState(false);
 
   return (
@@ -52,5 +52,3 @@ function About() {
     </section>
   );
 }
-
-export default About;

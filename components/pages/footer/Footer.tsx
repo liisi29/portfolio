@@ -1,7 +1,7 @@
 const { message } = {
   message: "Designed and built by Liisi Raidaru",
 };
-function Footer() {
+export default function Footer() {
   return (
     <footer className="_bg-black flex justify-between text-gray-500 px-2">
       <div>{message}</div>
@@ -13,5 +13,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;
