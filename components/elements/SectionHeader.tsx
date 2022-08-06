@@ -1,11 +1,12 @@
 import React from "react";
 import Trans from "translations/Trans";
+import { SectionHeaderType } from "./dto";
 
-function SectionHeader({
+export default function SectionHeader({
   section,
   sectionColor,
 }: {
-  section: Section;
+  section: SectionHeaderType;
   sectionColor?: "light" | "dark";
 }) {
   const color = sectionColor === "dark" ? "text-white" : "";
@@ -17,7 +18,3 @@ function SectionHeader({
     </div>
   );
 }
-
-export default SectionHeader;
-
-type Section = "about" | "work" | "contact" | "webcashier";

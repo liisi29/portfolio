@@ -1,12 +1,11 @@
-import React, { FC, PropsWithChildren, useEffect } from "react";
-import NavBar from "./navbar/Navbar";
-import Head from "next/head";
+import React, { PropsWithChildren } from "react";
 import SectionHeader from "@components/elements/SectionHeader";
+import { PageHeaderType } from "@components/elements/dto";
 
 function LayoutPage({
   children,
   section,
-}: PropsWithChildren & { section: Pages }) {
+}: PropsWithChildren & { section: PageHeaderType }) {
   return (
     <section
       className="_bg-white before:content-[''] 
@@ -26,5 +25,3 @@ function LayoutPage({
 }
 
 export default LayoutPage;
-
-type Pages = "webcashier";

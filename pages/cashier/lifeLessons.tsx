@@ -1,3 +1,5 @@
+import LayoutParagraph from "@components/layout/LayoutParagraph";
+
 const { title, messages, list } = {
   title: "What I have learned",
   messages: [
@@ -20,23 +22,25 @@ const { title, messages, list } = {
 
 export default function LifeLessons() {
   return (
-    <div id="lifeLessons">
-      <h2>{title}</h2>
-      <div className="mb-4">
-        {messages.map((m, i) => (
-          <div key={i}>{m}</div>
-        ))}
+    <LayoutParagraph section="lifeLessons">
+      <div id="lifeLessons">
+        <h2>{title}</h2>
+        <div className="mb-4">
+          {messages.map((m, i) => (
+            <div key={i}>{m}</div>
+          ))}
+        </div>
+        <ul>
+          {list.map((t: string, i: number) => (
+            <li
+              key={i}
+              className={`before:content-["▶"] before:_text-contrast before:absolute before:left-0 before:top-0 relative pl-8`}
+            >
+              <span>{t}</span>
+            </li>
+          ))}
+        </ul>
       </div>
-      <ul>
-        {list.map((t: string, i: number) => (
-          <li
-            key={i}
-            className={`before:content-["▶"] before:_text-contrast before:absolute before:left-0 before:top-0 relative pl-8`}
-          >
-            <span>{t}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
+    </LayoutParagraph>
   );
 }
