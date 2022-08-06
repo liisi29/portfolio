@@ -36,7 +36,6 @@ export default function WebCashier() {
           </div>
         </div>
         <LifeLessons />
-
         <Display />
         <Application />
         <Aurelia />

@@ -29,12 +29,12 @@ const story = <div>
 export default function Aurelia() {
   return (
     <div>
-      <h2>Aurelia</h2>
+      <h2>What the heck is Aurelia?</h2>
       <div className="">
         {story}
         <div className="right">
           <Image
-            src="/cashier/aurelia-icon.svg"
+            src="/skills/aurelia.png"
             alt="aurelia"
             width={200}
             height={200}

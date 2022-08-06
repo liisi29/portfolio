@@ -1,7 +1,7 @@
 import BlockListWithTriangles from "@components/elements/BlockListWithTriangles";
 
 const { title, list } = {
-  title: "What can you do with the application",
+  title: "More about the application. What can you do with the it?",
   list: [
     "Sell tickets (of course)",
     "View already bought tickets. There is A LOT of data that comes with a ticket. Names, addresses, comments, routes, addoms, seats, etc.. Lot of stuff.",
