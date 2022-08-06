@@ -33,25 +33,30 @@ html {
     @apply max-w-[1240px] m-auto py-40 
   }
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[blue] to-[red] text-[#353239]
+    @apply border-2 border-red-600 text-red-600 px-4 py-2 rounded-xl hover:bg-slate-50
   }
-  ._text-contrast {
-    @apply text-red-600;
-  }
-  ._bg-contrast {
-    @apply bg-red-600;
-  }
-  ._bg-skew {
+  
+  
+  ._bg-skew, ._bg-skew-rv {
     @apply py-[10rem]
   }
   ._bg-white {
     @apply bg-[white] text-gray-600
+  }
+  ._bg-cream {
+    @apply bg-[#f9f9f9] text-gray-600
   }
   ._bg-dark {
     @apply bg-slate-700 text-[#fff] 
   }
   ._bg-black {
     @apply bg-slate-800 text-[#fff] 
+  }
+  ._text-contrast {
+    @apply text-red-600;
+  }
+  ._bg-contrast {
+    @apply bg-red-600;
   }
  
 }
@@ -60,6 +65,14 @@ html {
     ._bg-skew {    
       clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);  
     }
+  }
+  @screen xl{
+    ._bg-skew-rv {    
+      clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);  
+    }
+  }
+  ._card {
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
   }
   ._dark-triangle-for-white-body:before {
     content: "";
@@ -102,5 +115,11 @@ html {
   }
   ._animation-delay-5 {
     animation-delay: 0.5s;
+  }  
+  ._animation-delay-6 {
+    animation-delay: 0.6s;
+  }  
+  ._animation-delay-7 {
+    animation-delay: 0.7s;
   }  
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./bus.module.css";
 
 function Bus() {
   return (

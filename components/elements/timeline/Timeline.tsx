@@ -3,6 +3,7 @@ import React from "react";
 import { blocks, IBlock } from "./cv";
 import BlockListWithTriangles from "../BlockListWithTriangles";
 import InlineListWithDots from "../InlineListWithDots";
+import LinkMainProject from "../links/LinkMainProject";
 
 const contentBg = "bg-transparent";
 const contentShadow = ""; // "shadow-md";
@@ -99,12 +100,8 @@ function Element({ props }: { props: Partial<IBlock> }) {
         </div>
       </div>
       {more && (
-        <div className="p-8 ">
-          <div
-            className={`_text-contrast _link underline before:content-["▶"] before:absolute before:left-0 before:top-0 relative pl-8`}
-          >
-            <Link href={more.link}>{more.label}</Link>
-          </div>
+        <div className="my-4">
+          <LinkMainProject />
         </div>
       )}
     </div>
