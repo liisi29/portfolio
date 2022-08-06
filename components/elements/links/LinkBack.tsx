@@ -10,7 +10,6 @@ export default function LinkBack() {
     if (path && path?.length > 0) {
       back = path[1];
     }
-    debugger;
     if (back !== null) {
       router.push(back);
     } else {

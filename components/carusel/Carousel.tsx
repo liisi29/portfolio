@@ -22,7 +22,6 @@ export function Carousel() {
   // objects with numbered keys. We will use those numbers (i) later to access a ref of a
   // specific image in this array.
   const refs = images.reduce((acc, val, i) => {
-    console.log(acc, val, i);
     //@ts-ignore
     acc[i] = createRef();
     return acc;
