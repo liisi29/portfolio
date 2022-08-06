@@ -88,8 +88,8 @@ function Element({ props }: { props: Partial<IBlock> }) {
     >
       <h3 className="font-semibold text-lg mb-1">{title}</h3>
       <div className="absolute top-[-1rem] right-0 text-right text-sm text-gray-500">
-        <h4>{company}</h4>
-        <h4>{date}</h4>
+        <h5>{company}</h5>
+        <h5>{date}</h5>
       </div>
 
       <div className="leading-tight text-justify">
