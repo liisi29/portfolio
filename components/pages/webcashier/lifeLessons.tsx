@@ -23,27 +23,25 @@ const { title, quote, intro, list } = {
 
 export default function LifeLessons() {
   return (
-    <LayoutParagraph section="lifeLessons">
-      <div id="lifeLessons">
-        <h2>{title}</h2>
-        <div className="mb-4">
-          <span className="italic font-semibold">{quote}</span>
-          <span>, they say.</span>
-          {intro.map((m, i) => (
-            <div key={i}>{m}</div>
-          ))}
-        </div>
-        <ul>
-          {list.map((t: string, i: number) => (
-            <li
-              key={i}
-              className={`before:content-["▶"] before:_text-contrast before:absolute before:left-0 before:top-0 relative pl-8`}
-            >
-              <span>{t}</span>
-            </li>
-          ))}
-        </ul>
+    <div id="lifeLessons">
+      <h2>{title}</h2>
+      <div className="mb-4">
+        <span className="italic font-semibold">{quote}</span>
+        <span>, they say.</span>
+        {intro.map((m, i) => (
+          <div key={i}>{m}</div>
+        ))}
       </div>
-    </LayoutParagraph>
+      <ul>
+        {list.map((t: string, i: number) => (
+          <li
+            key={i}
+            className={`before:content-["▶"] before:_text-contrast before:absolute before:left-0 before:top-0 relative pl-8`}
+          >
+            <span>{t}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }

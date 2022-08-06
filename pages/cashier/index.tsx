@@ -1,15 +1,14 @@
+import Application from "@components/pages/webcashier/application";
+import Aurelia from "@components/pages/webcashier/aurelia";
 import Bus from "@components/bus/Bus";
-import LayoutPage from "@components/layout/LayoutPage";
+import Display from "@components/pages/webcashier/display";
 import Image from "next/image";
-import { texts } from "@translations/webcashier";
-import Aurelia from "./aurelia";
-import LifeLessons from "./lifeLessons";
-import Stack from "./stack";
-import Intro from "./intro";
-import Display from "./display";
-import Me from "./me";
-import Application from "./application";
-import Responsibilities from "./responsibilities";
+import Intro from "@components/pages/webcashier/intro";
+import LayoutPage from "@components/layout/LayoutPage";
+import LifeLessons from "@components/pages/webcashier/lifeLessons";
+import Me from "@components/pages/webcashier/me";
+import Responsibilities from "@components/pages/webcashier/responsibilities";
+import Stack from "@components/pages/webcashier/stack";
 
 export default function WebCashier() {
   return (
