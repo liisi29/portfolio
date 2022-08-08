@@ -2,7 +2,7 @@ import React, { PropsWithChildren } from "react";
 import NavBar from "./navbar/Navbar";
 import Head from "next/head";
 
-function LayoutMain({ children }: PropsWithChildren) {
+export default function LayoutMain({ children }: PropsWithChildren) {
   return (
     <div>
       <Head>
@@ -16,5 +16,3 @@ function LayoutMain({ children }: PropsWithChildren) {
     </div>
   );
 }
-
-export default LayoutMain;

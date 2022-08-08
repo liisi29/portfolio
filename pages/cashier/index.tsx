@@ -11,6 +11,7 @@ import Responsibilities from "@components/pages/webcashier/responsibilities";
 import Stack from "@components/pages/webcashier/stack";
 import LinkSkills from "@components/elements/linkButtons/LinkSkills";
 import LinkBack from "@components/elements/linkButtons/LinkBack";
+import LinkRow from "@components/elements/linkButtons/LinkRow";
 
 export default function WebCashier() {
   return (
@@ -38,15 +39,7 @@ export default function WebCashier() {
           </div>
         </div>
         <LifeLessons />
-        <div className="my-28 flex">
-          <div className="mr-4">
-            <LinkBack />
-          </div>
-          <div>
-            {" "}
-            <LinkSkills />
-          </div>
-        </div>
+        <LinkRow />
         <Display />
         <Application />
         <Aurelia />

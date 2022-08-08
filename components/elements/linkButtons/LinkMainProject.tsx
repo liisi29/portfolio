@@ -1,7 +1,18 @@
 import LinkButtonBase from "./LinkButtonBase";
 
-export default function LinkMainProject({ back }: { back?: string }) {
+export default function LinkMainProject({
+  color,
+  back,
+}: {
+  back?: string;
+  color?: "contrast" | "white";
+}) {
   return (
-    <LinkButtonBase href={"/cashier"} back={back} label={"My main project"} />
+    <LinkButtonBase
+      href={"/cashier"}
+      back={back}
+      color={color}
+      label={"My main project"}
+    />
   );
 }

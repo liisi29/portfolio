@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
+import { ButtonBase } from "./LinkButtonBase";
 
-export default function LinkBack() {
+export default function LinkBack({ color }: { color?: "contrast" | "white" }) {
   const router = useRouter();
   const q = router;
 
@@ -17,11 +18,8 @@ export default function LinkBack() {
     }
   };
   return (
-    <button
-      onClick={clickHandler}
-      className="animate-pop _animation-fill-backwards _link "
-    >
-      Back
-    </button>
+    <div onClick={clickHandler}>
+      <ButtonBase color={color} label={"Back"} />
+    </div>
   );
 }

@@ -45,11 +45,9 @@ export default function Table({
                   className={`${first} _text-contrast whitespace-nowrap`}
                 >
                   <h4 id={s.key}>
-                    {s.texts ? (
-                      s.texts.map((t, i) => <p key={`text${i}`}>{t}</p>)
-                    ) : (
-                      <h4>{s.text}</h4>
-                    )}
+                    {s.texts
+                      ? s.texts.map((t, i) => <p key={`text${i}`}>{t}</p>)
+                      : s.text}
                   </h4>
                 </th>
                 {s.since && (

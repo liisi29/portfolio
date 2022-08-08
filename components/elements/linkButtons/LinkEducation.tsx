@@ -9,6 +9,11 @@ export default function LinkEducation({
   color?: "contrast" | "white";
 }) {
   return (
-    <LinkButtonBase href={"/education"} back={back} label={"My education"} />
+    <LinkButtonBase
+      href={"/education"}
+      back={back}
+      color={color}
+      label={"My education"}
+    />
   );
 }
