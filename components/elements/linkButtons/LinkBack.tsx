@@ -18,7 +18,7 @@ export default function LinkBack({ color }: { color?: ButtonColor }) {
     }
   };
   return (
-    <div onClick={clickHandler}>
+    <div onClick={clickHandler} className="max-w-fit m-auto">
       <ButtonBase color={color} label={"Back"} />
     </div>
   );

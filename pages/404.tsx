@@ -66,13 +66,13 @@ export default function FourOFour() {
   }, []);
 
   return (
-    <div className="w-full flex justify-start items-center">
+    <div className="w-full flex flex-col lg:flex-row justify-start items-center ">
       <div>
         <canvas id="canvas" width="400" height="400" />
       </div>
-      <div className="ml-24">
+      <div className="mt-24 lg:ml-24 lg:mt-0">
         <h1>Page not found</h1>
-        <div className="mt-16">
+        <div className="mt-16 m-auto align-center w-full">
           <LinkBack color="gray" />
         </div>
       </div>
