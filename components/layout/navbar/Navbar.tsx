@@ -35,7 +35,7 @@ function NavBar() {
   const twitter = <FaTwitter />;
   const github = <FaGithub />;
   return (
-    <header className="absolute md:relative w-full h-20 z-[100]">
+    <header className="absolute xl:relative w-full h-20 z-[100]">
       <div className="flex justify-end items-center w-full h-full px-2 2xl:px-16">
         <div>
           <ul className="hidden md:flex font-mono">

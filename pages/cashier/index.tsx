@@ -26,10 +26,10 @@ export default function WebCashier() {
         <Stack />
         <Responsibilities />
         <div className="">
-          <div className="w-[50%] inline-block">
+          <div className="w-[100%] 2xl:w-[45%] inline-block">
             <Me />
           </div>
-          <div className="ml-12 mt-12 w-[45%] inline-block">
+          <div className="ml-12 mt-12 w-[80%] 2xl:w-[45%] inline-block">
             <Image
               src="/cashier/modify.jpg"
               alt="modify"
