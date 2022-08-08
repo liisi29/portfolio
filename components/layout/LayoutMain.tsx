@@ -7,7 +7,6 @@ export default function LayoutMain({ children }: PropsWithChildren) {
     <div>
       <Head>
         <title>Liisi | Front End Developer</title>
-        <meta name="robots" content="noindex"></meta>
         <meta name="description" content="Love code" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
