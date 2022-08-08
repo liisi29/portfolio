@@ -42,7 +42,7 @@ export default function StackLogos() {
   return (
     <section id="stack" className="_bg-skew-rv _bg-black">
       <SectionHeader section="stack" />
-      <article className="flex flex-col xl:flex-row text-justify flex-wrap">
+      <article className="flex flex-col lg:flex-row text-justify flex-wrap">
         {list.map((s, i) => {
           return (
             <div

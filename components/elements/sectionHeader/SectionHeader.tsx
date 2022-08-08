@@ -7,14 +7,18 @@ import {
 export default function SectionHeader({
   section,
   sectionColor,
+  hideForSmall,
 }: {
   section: SectionHeaderTranslation;
   sectionColor?: "light" | "dark";
+  hideForSmall?: "true";
 }) {
   const color = sectionColor === "dark" ? "text-white" : "";
   return (
     <div
-      className={`hidden lg:block uppercase text-xl tracking-wider ${color} absolute top-1/2 left-0 -rotate-90 w-[8rem] max-w-[8rem] overflow-x-visible whitespace-nowrap`}
+      className={`${
+        hideForSmall ? "hidden lg:block" : ""
+      } block uppercase text-xl tracking-wider ${color} lg:absolute lg:top-1/2 lg:left-0 lg:-rotate-90 w-[8rem] max-w-[8rem] overflow-x-visible whitespace-nowrap`}
     >
       {sectionHeaderTranslations[section]}
     </div>

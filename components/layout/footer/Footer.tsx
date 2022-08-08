@@ -3,7 +3,7 @@ const { message } = {
 };
 export default function Footer() {
   return (
-    <footer className="_bg-black flex justify-between text-gray-500 px-2">
+    <footer className="_bg-black md:flex justify-between text-gray-500 px-2">
       <div>{message}</div>
       <div>
         <span className="text-gray-500">Head</span>

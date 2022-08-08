@@ -30,7 +30,7 @@ export default function About() {
         </div>
         <div
           className={`${
-            imageIsLoaded ? "animate-[slideFromRight_1s_ease-in-out]" : ""
+            imageIsLoaded ? "lg:animate-[slideFromRight_1s_ease-in-out]" : ""
           } w-full h-auto m-auto justify-center p-4 max-w-lg`}
         >
           <Image

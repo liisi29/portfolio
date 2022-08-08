@@ -17,7 +17,7 @@ function LayoutPage({
     "
     >
       <SectionHeader section={section} />
-      <article className="flex flex-col xl:flex-row text-justify ">
+      <article className="flex flex-col lg:flex-row text-justify ">
         {children}
       </article>
     </section>

@@ -27,7 +27,7 @@ html {
     @apply cursor-pointer
   }
   section {
-    @apply w-full flex items-center relative py-[2rem] px-4 lg:px-[20%] 
+    @apply w-full block lg:flex items-center relative py-[2rem] px-4 lg:px-[20%] 
   }
   article {
     @apply max-w-[1240px] m-auto py-40 
