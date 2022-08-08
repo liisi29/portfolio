@@ -97,7 +97,7 @@ export function Carousel() {
     // absolute positioning on each side of the image.
     <div className="p-12 flex justify-center max-w-full  items-center">
       <div className="relative w-full">
-        <div className={styles._carousel}>
+        <div className={`${styles._carousel} overflow-x-hidden inline-flex`}>
           {sliderControl(true)}
           {images.map((img, i) => (
             <div
