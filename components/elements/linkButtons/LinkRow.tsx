@@ -13,7 +13,7 @@ export default function LinkRow({
   color?: "contrast" | "white";
 }) {
   return (
-    <div className="my-28 flex">
+    <div className="my-28 flex flex-wrap">
       <Col>
         <LinkBack />
       </Col>
@@ -34,5 +34,5 @@ export default function LinkRow({
 }
 
 function Col({ children }: PropsWithChildren) {
-  return <div className="mr-4">{children}</div>;
+  return <div className="mr-4 mt-4">{children}</div>;
 }

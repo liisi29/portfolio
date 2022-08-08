@@ -33,7 +33,7 @@ export function ButtonBase({
 }) {
   return (
     <button
-      className={`animate-pop _animation-fill-backwards _link ${
+      className={`animate-pop _animation-fill-backwards _link whitespace-nowrap ${
         color === "white"
           ? "_border-white"
           : color === "gray"
