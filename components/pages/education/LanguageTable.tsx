@@ -1,5 +1,5 @@
 import { Level, TableListItem } from "@components/elements/table/dto";
-import Table from "@components/elements/table/Table";
+import Table, { TableHeaderItem } from "@components/elements/table/Table";
 const list: TableListItem[] = [
   {
     key: "estonian",
@@ -18,7 +18,10 @@ const list: TableListItem[] = [
   },
 ];
 export default function LanguageTable() {
-  const ths = ["Language", "Level"];
+  const ths: TableHeaderItem[] = [
+    { text: "Language", key: "title" },
+    { text: "Level", key: "level" },
+  ];
   return (
     <div>
       <Table ths={ths} list={list} />

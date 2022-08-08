@@ -1,7 +1,7 @@
 import InlineListWithDots from "@components/elements/InlineListWithDots";
 import LinkMainProject from "@components/elements/linkButtons/LinkMainProject";
 import { Level, TableListItem } from "@components/elements/table/dto";
-import Table from "@components/elements/table/Table";
+import Table, { TableHeaderItem } from "@components/elements/table/Table";
 import { Skill, SkillList, skills as raw } from "@data/skills";
 
 type SkillListTable = Skill & TableListItem;
@@ -120,7 +120,12 @@ const generalStack = {
   ],
 };
 export default function StackTable() {
-  const ths = ["Tech", "Since", "Description", "Level"];
+  const ths: TableHeaderItem[] = [
+    { text: "Tech", key: "title" },
+    { text: "Since", key: "since" },
+    { text: "Description", key: "description" },
+    { text: "Level", key: "level" },
+  ];
   return (
     <div>
       <Table ths={ths} list={list} />

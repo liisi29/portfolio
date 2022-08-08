@@ -1,5 +1,5 @@
 import { Level, TableListItem } from "@components/elements/table/dto";
-import Table from "@components/elements/table/Table";
+import Table, { TableHeaderItem } from "@components/elements/table/Table";
 const list: TableListItem[] = [
   {
     key: "js",
@@ -35,7 +35,11 @@ const list: TableListItem[] = [
   },
 ];
 export default function CoursesTable() {
-  const ths = ["Language", "Duration", "Teacher"];
+  const ths: TableHeaderItem[] = [
+    { text: "Course", key: "title" },
+    { text: "Duration", key: "since" },
+    { text: "Teacher", key: "description", showDescriptionInSm: true },
+  ];
   return (
     <div>
       <Table ths={ths} list={list} />
