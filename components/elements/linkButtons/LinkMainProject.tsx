@@ -7,7 +7,7 @@ export default function LinkMainProject({ back }: { back?: string }) {
   return (
     <Link href={url}>
       <button className="animate-pop _animation-fill-backwards _link ">
-        Read about my main project
+        My main project
       </button>
     </Link>
   );

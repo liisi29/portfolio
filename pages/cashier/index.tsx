@@ -9,9 +9,8 @@ import LifeLessons from "@components/pages/webcashier/lifeLessons";
 import Me from "@components/pages/webcashier/me";
 import Responsibilities from "@components/pages/webcashier/responsibilities";
 import Stack from "@components/pages/webcashier/stack";
-import LinkSkills from "@components/elements/links/LinkSkills";
-import LinkMainPageWork from "@components/elements/links/LinkMainPageWork";
-import LinkBack from "@components/elements/links/LinkBack";
+import LinkSkills from "@components/elements/linkButtons/LinkSkills";
+import LinkBack from "@components/elements/linkButtons/LinkBack";
 
 export default function WebCashier() {
   return (

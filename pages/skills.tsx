@@ -1,5 +1,5 @@
-import LinkBack from "@components/elements/links/LinkBack";
-import LinkMainProject from "@components/elements/links/LinkMainProject";
+import LinkBack from "@components/elements/linkButtons/LinkBack";
+import LinkMainProject from "@components/elements/linkButtons/LinkMainProject";
 import LayoutPage from "@components/layout/LayoutPage";
 import StackTable from "@components/pages/stack/StackTable";
 

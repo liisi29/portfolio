@@ -3,7 +3,7 @@ import React from "react";
 import { blocks, IBlock } from "./cv";
 import BlockListWithTriangles from "../BlockListWithTriangles";
 import InlineListWithDots from "../InlineListWithDots";
-import LinkMainProject from "../links/LinkMainProject";
+import LinkMainProject from "../linkButtons/LinkMainProject";
 import { useRouter } from "next/router";
 
 const contentBg = "bg-transparent";

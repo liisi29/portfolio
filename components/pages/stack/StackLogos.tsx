@@ -3,6 +3,8 @@ import Image from "next/image";
 import SectionHeader from "@components/elements/sectionHeader/SectionHeader";
 import { skills as raw } from "@data/skills";
 import { useRouter } from "next/router";
+import LinkMainProject from "@components/elements/linkButtons/LinkMainProject";
+import LinkSkills from "@components/elements/linkButtons/LinkSkills";
 
 const { message } = {
   message: "Since:",
@@ -91,6 +93,9 @@ export default function StackLogos() {
             </div>
           );
         })}
+        <div className="flex justify-center w-full -mb-[100px] items-end">
+          <LinkSkills color="white" />
+        </div>
       </article>
     </section>
   );

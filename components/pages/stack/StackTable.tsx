@@ -1,5 +1,5 @@
 import InlineListWithDots from "@components/elements/InlineListWithDots";
-import LinkMainProject from "@components/elements/links/LinkMainProject";
+import LinkMainProject from "@components/elements/linkButtons/LinkMainProject";
 import { skills as raw } from "@data/skills";
 enum Level {
   Main,
