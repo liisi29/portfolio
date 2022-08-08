@@ -44,11 +44,11 @@ export default function Table({
                   scope="row"
                   className={`${first} _text-contrast whitespace-nowrap`}
                 >
-                  <h4 id={s.key}>
+                  <div id={s.key}>
                     {s.texts
                       ? s.texts.map((t, i) => <p key={`text${i}`}>{t}</p>)
                       : s.text}
-                  </h4>
+                  </div>
                 </th>
                 {s.since && (
                   <td className={`${even}`}>
