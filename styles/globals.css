@@ -38,6 +38,9 @@ html {
   button._border-white {
     @apply border-white text-white hover:bg-gray-800
   }
+  button._border-gray {
+    @apply border-gray-600 text-gray-600 hover:bg-slate-50
+  }
   
   
   ._bg-skew, ._bg-skew-rv {

@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
-import { ButtonBase } from "./LinkButtonBase";
+import { ButtonBase, ButtonColor } from "./LinkButtonBase";
 
-export default function LinkBack({ color }: { color?: "contrast" | "white" }) {
+export default function LinkBack({ color }: { color?: ButtonColor }) {
   const router = useRouter();
   const q = router;
 

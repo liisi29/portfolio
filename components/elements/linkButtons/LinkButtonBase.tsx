@@ -29,15 +29,21 @@ export function ButtonBase({
   label,
 }: {
   label: string;
-  color?: "contrast" | "white";
+  color?: ButtonColor;
 }) {
   return (
     <button
       className={`animate-pop _animation-fill-backwards _link ${
-        color === "white" ? "_border-white" : ""
+        color === "white"
+          ? "_border-white"
+          : color === "gray"
+          ? "_border-gray"
+          : ""
       }`}
     >
       {label}
     </button>
   );
 }
+
+export type ButtonColor = "contrast" | "white" | "gray";
