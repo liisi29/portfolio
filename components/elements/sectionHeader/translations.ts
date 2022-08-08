@@ -5,10 +5,11 @@ export const sectionHeaderTranslations: Record<SectionHeaderTranslation, string>
     webcashier: "My main project",
     skills: "Skills",
     stack: "Stack",
-    lifeLessons: "Life lessons"
+    lifeLessons: "Life lessons",
+    education: "Education"
 };
 
 export type SectionHeaderTranslation = MainPageSectionHeaderTranslation | LayoutPageHeaderTranslation | LayoutParagraphHeaderTranslation;
 export type MainPageSectionHeaderTranslation = "about" | "work" | "contact" | "stack";
-export type LayoutPageHeaderTranslation = "webcashier" | "skills";
+export type LayoutPageHeaderTranslation = "webcashier" | "skills" | "education";
 export type LayoutParagraphHeaderTranslation = "lifeLessons";
