@@ -1,3 +1,4 @@
+import LinkEducation from "@components/elements/linkButtons/LinkEducation";
 import SectionHeader from "@components/elements/sectionHeader/SectionHeader";
 import React from "react";
 import Timeline from "../../elements/timeline/Timeline";
@@ -9,6 +10,9 @@ export default function Work() {
       <article>
         <div>
           <Timeline />
+          <div id="education">
+            <LinkEducation back={"/#education"} />
+          </div>
         </div>
       </article>
     </section>
