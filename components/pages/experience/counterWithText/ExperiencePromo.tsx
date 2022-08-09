@@ -1,5 +1,5 @@
 import CounterWithText from "@components/pages/experience/counterWithText/CounterWithText";
-import ExperienceList from "@components/pages/experience/Experience";
+import ExperienceList from "@components/pages/experience/ExperienceList";
 import LoveToCode from "@components/pages/experience/loveCode/LoveToCode";
 const list = ["Writing code", "Senior/production level", "years of experience"];
 

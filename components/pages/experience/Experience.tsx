@@ -1,38 +1,17 @@
-const { title, list } = {
-  title: "I have:",
-  list: [
-    <span key="0">
-      been in charge of a <strong>big application</strong> that is a working
-      tool in many countries
-    </span>,
-    <span key="1">
-      done <strong>end user research</strong> and applied the results to
-      development
-    </span>,
-    <span key="3">
-      <strong>proposed</strong> and <strong>implemented</strong> new features
-    </span>,
-    <span key="4">
-      worked in <strong>feature teams</strong> having close contact with
-      designers, management and end users
-    </span>,
-    <span key="5">
-      <strong>arhitectured</strong> and <strong>written</strong> production
-      front end from scratch
-    </span>,
-    <span key="6">
-      provided <strong>technical insight</strong>
-    </span>,
-  ],
-};
+import ExperiencePromo from "@components/pages/experience/counterWithText/ExperiencePromo";
+import SectionHeader from "@components/elements/sectionHeader/SectionHeader";
+import LinkRow from "@components/elements/linkButtons/LinkRow";
 
-export default function ExperienceList() {
+export default function Experience() {
   return (
-    <div>
-      <div>{title}</div>
-      <BlockListWithTriangles list={list} />
-    </div>
+    <section id="experience">
+      <SectionHeader section="experience" />
+      <article>
+        <div>
+          <ExperiencePromo />
+          <LinkRow all={false} back={"/#experience"}></LinkRow>
+        </div>
+      </article>
+    </section>
   );
 }
-
-import BlockListWithTriangles from "@components/elements/lists/BlockListWithTriangles";

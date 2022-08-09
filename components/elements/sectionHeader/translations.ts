@@ -1,6 +1,6 @@
 export const sectionHeaderTranslations: Record<SectionHeaderTranslation, string> = {
     about: "About me",
-    work: "Where I've worked",
+    career: "Where I've worked",
     contact: "Let's get in touch",
     webcashier: "My main project",
     skills: "Skills",
@@ -12,5 +12,5 @@ export const sectionHeaderTranslations: Record<SectionHeaderTranslation, string>
 
 export type SectionHeaderTranslation = MainPageSectionHeaderTranslation | LayoutPageHeaderTranslation | LayoutParagraphHeaderTranslation;
 export type MainPageSectionHeaderTranslation = "about" | "experience" | "contact" | "stack";
-export type LayoutPageHeaderTranslation = "webcashier" | "skills" | "education" | "work";
+export type LayoutPageHeaderTranslation = "webcashier" | "skills" | "education" | "career";
 export type LayoutParagraphHeaderTranslation = "lifeLessons";

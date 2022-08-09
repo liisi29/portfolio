@@ -3,7 +3,7 @@ import Contact from "@components/pages/contact/Contact";
 import Footer from "@components/layout/footer/Footer";
 import Main from "@components/pages/main/Main";
 import StackLogos from "@components/pages/stack/StackLogos";
-import Work from "@components/pages/work/Work";
+import Experience from "@components/pages/experience/Experience";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <Main />
       <About />
       <StackLogos />
-      <Work />
+      <Experience />
       <Contact />
       <Footer />
     </div>
