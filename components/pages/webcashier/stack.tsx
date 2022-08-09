@@ -1,4 +1,4 @@
-import InlineListWithDots from "@components/elements/InlineListWithDots";
+import InlineListWithDots from "@components/elements/lists/InlineListWithDots";
 
 const { title, list } = {
   title: "Technology",

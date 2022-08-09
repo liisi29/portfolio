@@ -1,4 +1,4 @@
-import BlockListWithTriangles from "@components/elements/BlockListWithTriangles";
+import BlockListWithTriangles from "@components/elements/lists/BlockListWithTriangles";
 
 export default function Responsibilities() {
   const { title, list } = {

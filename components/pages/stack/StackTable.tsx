@@ -1,4 +1,4 @@
-import InlineListWithDots from "@components/elements/InlineListWithDots";
+import InlineListWithDots from "@components/elements/lists/InlineListWithDots";
 import LinkMainProject from "@components/elements/linkButtons/LinkMainProject";
 import { Level, TableListItem } from "@components/elements/table/dto";
 import Table, { TableHeaderItem } from "@components/elements/table/Table";

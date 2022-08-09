@@ -1,6 +1,7 @@
 import { PropsWithChildren } from "react";
 import LinkBack from "./LinkBack";
 import LinkEducation from "./LinkEducation";
+import LinkExperience from "./LinkExperience";
 import LinkHome from "./LinkHome";
 import LinkMainProject from "./LinkMainProject";
 import LinkSkills from "./LinkSkills";
@@ -8,20 +9,29 @@ import LinkSkills from "./LinkSkills";
 export default function LinkRow({
   color,
   back,
+  all = true,
 }: {
   back?: string;
   color?: "contrast" | "white";
+  all: boolean;
 }) {
   return (
     <div className="my-28 flex flex-wrap">
-      <Col>
-        <LinkBack />
-      </Col>
-      <Col>
-        <LinkHome />
-      </Col>
+      {all && (
+        <Col>
+          <LinkBack />
+        </Col>
+      )}
+      {all && (
+        <Col>
+          <LinkHome />
+        </Col>
+      )}
       <Col>
         <LinkMainProject back={back} color={color} />
+      </Col>
+      <Col>
+        <LinkExperience back={back} color={color} />
       </Col>
       <Col>
         <LinkSkills back={back} color={color} />

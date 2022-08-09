@@ -1,4 +1,4 @@
-import BlockListWithTriangles from "@components/elements/BlockListWithTriangles";
+import BlockListWithTriangles from "@components/elements/lists/BlockListWithTriangles";
 
 const { title, list } = {
   title: "More about the application. What can you do with the it?",

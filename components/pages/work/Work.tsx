@@ -1,18 +1,15 @@
-import LinkEducation from "@components/elements/linkButtons/LinkEducation";
+import ExperiencePromo from "@components/workExperiencePromo/ExperiencePromo";
 import SectionHeader from "@components/elements/sectionHeader/SectionHeader";
-import React from "react";
-import Timeline from "../../elements/timeline/Timeline";
+import LinkRow from "@components/elements/linkButtons/LinkRow";
 
 export default function Work() {
   return (
-    <section id="work">
-      <SectionHeader section="work" />
+    <section id="experience">
+      <SectionHeader section="experience" />
       <article>
         <div>
-          <Timeline />
-          <div id="education">
-            <LinkEducation back={"/#education"} />
-          </div>
+          <ExperiencePromo />
+          <LinkRow all={false} back={"/#experience"}></LinkRow>
         </div>
       </article>
     </section>

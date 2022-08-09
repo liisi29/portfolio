@@ -1,0 +1,117 @@
+.bouncer {
+  animation-name: bounce;
+  transform-origin: center bottom;
+  animation-duration: 8s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+.bouncer_6 {
+  animation-delay: 2s;
+}
+.bouncer_9 {
+  animation-delay: 1s;
+}
+.counter div {
+  line-height: normal;
+}
+
+.counter div::after {
+  content: counter(count);
+  animation-iteration-count: 1;
+}
+.counter_6 div::after {
+  animation: counter_6 2s linear alternate;
+  counter-reset: count 6;
+}
+.counter_9 div::after {
+  animation: counter_9 1s linear alternate;
+  counter-reset: count 9;
+}
+
+@keyframes counter_6 {
+  0% {
+    counter-increment: count -6;
+  }
+  20% {
+    counter-increment: count -5;
+  }
+  40% {
+    counter-increment: count -4;
+  }
+  50% {
+    counter-increment: count -3;
+  }
+  60% {
+    counter-increment: count -2;
+  }
+  80% {
+    counter-increment: count -1;
+  }
+  100% {
+    counter-increment: count 0;
+  }
+}
+
+@keyframes counter_9 {
+  0% {
+    counter-increment: count -9;
+  }
+  11% {
+    counter-increment: count -8;
+  }
+  22% {
+    counter-increment: count -7;
+  }
+  33% {
+    counter-increment: count -6;
+  }
+  44% {
+    counter-increment: count -5;
+  }
+  55% {
+    counter-increment: count -5;
+  }
+  66% {
+    counter-increment: count -3;
+  }
+  77% {
+    counter-increment: count -2;
+  }
+  88% {
+    counter-increment: count -1;
+  }
+  95% {
+    counter-increment: count -0;
+  }
+}
+
+
+@keyframes bounce {
+  0%,
+  2.498%,
+  6.623%,
+  9.996%,
+  12.499% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  4.996%,
+  5.372% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+  8.75% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+  11.248% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}

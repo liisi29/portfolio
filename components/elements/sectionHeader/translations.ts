@@ -6,10 +6,11 @@ export const sectionHeaderTranslations: Record<SectionHeaderTranslation, string>
     skills: "Skills",
     stack: "Stack",
     lifeLessons: "Life lessons",
-    education: "Education"
+    education: "Education",
+    experience: "Experience"
 };
 
 export type SectionHeaderTranslation = MainPageSectionHeaderTranslation | LayoutPageHeaderTranslation | LayoutParagraphHeaderTranslation;
-export type MainPageSectionHeaderTranslation = "about" | "work" | "contact" | "stack";
-export type LayoutPageHeaderTranslation = "webcashier" | "skills" | "education";
+export type MainPageSectionHeaderTranslation = "about" | "experience" | "contact" | "stack";
+export type LayoutPageHeaderTranslation = "webcashier" | "skills" | "education" | "work";
 export type LayoutParagraphHeaderTranslation = "lifeLessons";

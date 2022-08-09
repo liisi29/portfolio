@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React from "react";
 import { blocks, IBlock } from "./cv";
-import BlockListWithTriangles from "../BlockListWithTriangles";
-import InlineListWithDots from "../InlineListWithDots";
-import LinkMainProject from "../linkButtons/LinkMainProject";
+import BlockListWithTriangles from "../elements/lists/BlockListWithTriangles";
+import InlineListWithDots from "../elements/lists/InlineListWithDots";
+import LinkMainProject from "../elements/linkButtons/LinkMainProject";
 import { useRouter } from "next/router";
 
 const contentBg = "bg-transparent";

@@ -6,7 +6,7 @@ import LinkRow from "@components/elements/linkButtons/LinkRow";
 import LayoutPage from "@components/layout/LayoutPage";
 import StackTable from "@components/pages/stack/StackTable";
 
-export default function WebCashier() {
+export default function Skills() {
   return (
     <LayoutPage section="skills">
       <div className="relative">

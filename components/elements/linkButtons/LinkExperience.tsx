@@ -1,6 +1,6 @@
 import LinkButtonBase from "./LinkButtonBase";
 
-export default function LinkEducation({
+export default function LinkExperience({
   color,
   back,
 }: {
@@ -9,10 +9,10 @@ export default function LinkEducation({
 }) {
   return (
     <LinkButtonBase
-      href={"/education"}
+      href={"/experience"}
       back={back}
       color={color}
-      label={"My education"}
+      label={"My career path"}
     />
   );
 }

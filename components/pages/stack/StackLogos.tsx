@@ -48,7 +48,7 @@ export default function StackLogos() {
         {list.map((s, i) => {
           return (
             <div
-              style={{ animationDelay: `${i * 0.1 + 0.4}s` }}
+              style={{ animationDelay: `${i * 0.05 + 0.1}s` }}
               key={i}
               className={`flex flex-col items-center bg-gray-200 rounded-lg border shadow-md md:flex-row md:max-w-xl
               hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 m-4
