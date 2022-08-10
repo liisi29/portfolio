@@ -5,7 +5,7 @@ const { title, list } = {
   list: [
     {
       title: "Aurelia.js",
-      body: `Our main choice of framework was between Angular.js (first generation
+      body: `Our main dilemma when choosing framework was between Angular.js (first generation
         of Angular) and Aurelia. We picked Aurelia because it was lightweight
         and highly configurable`,
     },
@@ -42,7 +42,10 @@ const generalStack = {
 export default function Stack() {
   const parag = ({ title, body }: { title: string; body: string }) => {
     return (
-      <div className="flex" key={title.replace(/[ .]+/g, "")}>
+      <div
+        className="flex flex-col lg:flex-row py-4"
+        key={title.replace(/[ .]+/g, "")}
+      >
         <h4 className="_text-contrast min-w-[10rem]">{title}</h4>
         <div>{body}</div>
       </div>

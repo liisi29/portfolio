@@ -15,7 +15,7 @@ const robLink = (
 //prettier-ignore
 const story = <div> 
   <div>Usually when I say my project uses Aurelia I get: Aurelia? Never heard of it.</div>
-  <div className="flex">Well.. {aureliaLink} is a javascript framework made by {robLink}.</div>
+  <div className="flex flex-col lg:flex-row">Well.. {aureliaLink} is a javascript framework made by {robLink}</div>
   <div>Rob used to be one of the main developers behind Angular, but then decided to make his own framework.</div> 
   <div>At the time Aurelia seemed fresh. Unopinionated. Highly configurable. Easy to learn. It really was a good framework.</div>
   <div>I would say it is somewhere between Vue and React.</div> 
