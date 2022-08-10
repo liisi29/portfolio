@@ -1,4 +1,4 @@
-import ExperiencePromo from "@components/pages/experience/counterWithText/ExperiencePromo";
+import ExperiencePromo from "@components/pages/experience/ExperiencePromo";
 import SectionHeader from "@components/elements/sectionHeader/SectionHeader";
 import LinkRow from "@components/elements/linkButtons/LinkRow";
 

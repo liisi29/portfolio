@@ -9,7 +9,9 @@ export default function BlockListWithTriangles({
   return (
     <ul>
       {(list || []).map((t, i: number) => (
-        <TriangleListItemBase key={i}>{t}</TriangleListItemBase>
+        <TriangleListItemBase key={i} id={i}>
+          {t}
+        </TriangleListItemBase>
       ))}
     </ul>
   );
