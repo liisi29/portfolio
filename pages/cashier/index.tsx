@@ -19,8 +19,8 @@ export default function WebCashier() {
       <Bus />
       <div className="relative">
         <div className="">
-          <h1>Webcashier</h1>
-          <h2>My biggest project so far</h2>
+          <h1 className="text-4xl sm:text-6xl text">Webcashier</h1>
+          <h2 className="text-left">My biggest project so far</h2>
         </div>
         <Intro />
         <Stack />
