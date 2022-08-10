@@ -1,4 +1,3 @@
-import Counter from "@components/pages/experience/counter/Counter";
 import { AiFillHeart } from "react-icons/ai";
 
 export default function LoveToCode() {
